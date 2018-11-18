@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+  <title>Phrase</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <meta http-equiv="content-type" charset="utf-8">
+
+</head>
+
+<style>
+  main {
+    margin: 0px;
+  }
+
+  section {
+    margin: 20px;
+  }
+
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 70%
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    width: 25%;
+  }
+
+  th:hover,
+  td:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .vocabulary-table {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #vocabulary-table {
+    margin: 0 auto;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="nav-bar" id="nav-bar-1">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Lessons</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav hide" id="sub-nav">
+      <div class="nav-bar" id="nav-bar-2">
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="alphabet.html">Alphabet</a></li>
+          <li></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="Hiragana.html">Hiragana</a></li>
+          <li></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="katakana.html">Katakana</a></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="upper-case">Basic Phrases</h1>
+
+    <section class="vocabulary">
+      <hr>
+      <div class="introduction">
+        <p>Here are some useful basic Phrases in Japanese</p>
+        <p><em>Please click the words to check out how they are spelled</em></p>
+      </div>
+
+      <div class="vocabulary-table">
+        <table id="vocabulary-table">
+          <tr>
+            <th scope="col">
+              漢字
+              <br>
+              Kanji
+            </th>
+            <th scope="col">
+              ひらがな
+              <br>
+              Hiragana
+            </th>
+            <th scope="col">
+              ローマ字
+              <br>
+              Romaji
+            </th>
+            <th scope="col">
+              English Meaning
+            </th>
+          </tr>
+
+          <tr id="ohayou">
+            <td>おはよう</td>
+            <td>おはよう</td>
+            <td>ohayou</td>
+            <td>
+              Good morning
+              <br>
+              (Normal)
+            </td>
+            <audio id="ohayou-audio" src="audio/phrases/ohayou.m4a"></audio>
+          </tr>
+
+          <tr id="ohayougozaimasu">
+            <td>おはようございます</td>
+            <td>おはようございます</td>
+            <td>ohayougozaimasu</td>
+            <td>
+              Good morning
+              <br>
+              (Formal)
+            </td>
+            <audio id="ohayougozaimasu-audio" src="audio/phrases/ohayougozaimasu.m4a"></audio>
+
+          </tr>
+
+          <tr id="konnichiha">
+            <td>こんにちは</td>
+            <td>こんにちは</td>
+            <td>konnichiha</td>
+            <td>Hello</td>
+            <audio id="konnichiha-audio" src="audio/phrases/konnichiha.m4a"></audio>
+
+          </tr>
+
+          <tr id="konbanha">
+            <td>こんばんは</td>
+            <td>こんばんは</td>
+            <td>konbanwa</td>
+            <td>Good evening</td>
+            <audio id="konbanha-audio" src="audio/phrases/konbanha.m4a"></audio>
+
+          </tr>
+
+          <tr id="oyasuminasai">
+            <td>おやすみなさい</td>
+            <td>おやすみなさい</td>
+            <td>oyasuminasai</td>
+            <td>Good night</td>
+            <audio id="oyasuminasai-audio" src="audio/phrases/oyasuminasai.m4a"></audio>
+
+          </tr>
+
+          <tr id="arigatou">
+            <td>ありがとう</td>
+            <td>ありがとう</td>
+            <td>arigatou</td>
+            <td>Thank you
+              <br>
+              (Normal)
+            </td>
+            <audio id="arigatou-audio" src="audio/phrases/arigatou.m4a"></audio>
+
+          </tr>
+
+          <tr id="arigatougozaimasu">
+            <td>ありがとうございます</td>
+            <td>ありがとうございます</td>
+            <td>arigatougozaimasu</td>
+            <td>Thank you
+              <br>
+              (Formal)
+            </td>
+            <audio id="arigatougozaimasu-audio" src="audio/phrases/arigatougozaimasu.m4a"></audio>
+
+          </tr>
+
+          <tr id="gomennasai">
+            <td>ごめんなさい</td>
+            <td>ごめんなさい</td>
+            <td>gomennasai</td>
+            <td>Sorry
+              <br>
+              (Normal, Formal)
+            </td>
+            <audio id="gomennasai-audio" src="audio/phrases/gomennasai.m4a"></audio>
+
+          </tr>
+
+          <tr id="sumimasen">
+            <td>すみません</td>
+            <td>すみません</td>
+            <td>sumimasen</td>
+            <td>Sorry
+              <br>
+              (Normal, Formal)
+            </td>
+            <audio id="sumimasen-audio" src="audio/phrases/sumimasen.m4a"></audio>
+
+          </tr>
+
+          <tr id="hai">
+            <td>はい</td>
+            <td>はい</td>
+            <td>hai</td>
+            <td>Yes</td>
+            <audio id="hai-audio" src="audio/phrases/hai.m4a"></audio>
+
+          </tr>
+
+          <tr id="iie">
+            <td>いいえ</td>
+            <td>いいえ</td>
+            <td>iie</td>
+            <td>No</td>
+            <audio id="iie-audio" src="audio/phrases/iie.m4a"></audio>
+
+          </tr>
+
+
+        </table>
+      </div>
+    </section>
+    <a href="vocabulary.html" class="next-previous" id="previous"> Previous </a>
+    <a href="#" class="next-previous" id="next"> Next </a>
+  </main>
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/nav-bar.js"></script>
+  <script src="js/basic-phrases.js"></script>
+</body>
+
+</html>

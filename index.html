@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>Japanese Learning</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+</head>
+<style>
+    h3 {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .background {
+        min-height: 800px;
+        /*background-image: url("http://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg");*/
+        background-image: url("image/Mount-Fuji.jpg");
+        background-size: cover;
+    }
+
+    .background h1 {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 50px;
+        margin-top: 0px;
+        padding-top: 80px;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+    }
+
+    #getstarted {
+        background-color: #333;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 1.3px;
+        padding: 16px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .getstarted:hover {
+        color: bisque;
+    }
+
+    .container {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 0 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="navtest">
+            <div class="nav">
+                <div class="nav-bar" id="nav-bar-1">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Introduction</a></li>
+                        <li><a href="#">Lessons</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav hide" id="sub-nav">
+                <div class="nav-bar" id="nav-bar-2">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li><a href="alphabet.html">Alphabet</a></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li><a href="hiragana.html">Hiragana</a></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li><a href="katakana.html">Katakana</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="background">
+            <div class="container">
+                <h1>Japanese Learning Website</h1>
+                <a href="alphabet.html" id="getstarted">Get started</a>
+            </div>
+        </div>
+    </main>
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nav-bar.js"></script>
+</body>
+
+</html>

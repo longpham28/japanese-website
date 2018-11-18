@@ -1,0 +1,631 @@
+<!DOCTYPE document>
+<html>
+
+<head>
+    <title>Alphabet</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+    table {
+        width: 100%;
+        background-color: darkgreen;
+    }
+
+    td {
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    #alphabet {
+        margin: 20px;
+    }
+
+    #alphabet h1 {
+        text-transform: uppercase;
+    }
+
+    section {
+        margin: 20px;
+    }
+
+    #hiraganatable,
+    #katakanatable {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(17, 1fr);
+    }
+
+    #hiraganatable1,
+    #katakanatable1 {
+        grid-column: 1/6;
+        grid-row: 1/12;
+        margin: 0px;
+    }
+
+    #hiraganatable2,
+    #katakanatable2 {
+        grid-column: 1/6;
+        grid-row: 13/18;
+        margin: 0px;
+    }
+
+    #hiraganatable3,
+    #katakanatable3 {
+        grid-column: 7/10;
+        grid-row: 2/18;
+        margin: 0px;
+    }
+
+    #hiraganatable,
+    #katakanatable {
+        margin: 20px auto;
+        padding: 20px;
+        width: 80%;
+    }
+
+    #kanji label {
+        display: inline-block;
+        margin: 10px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    #kanjiex {
+        display: inline-block;
+    }
+
+    #kanjiex p {
+        display: inline-block;
+        border: solid 1px black;
+        border-radius: 10px;
+        text-align: center;
+        background-color: darkgreen;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    table {
+        border: solid 1px black;
+        border-radius: 10px;
+    }
+
+    table tr {
+        height: 50px;
+    }
+
+    table th,
+    table td {
+        text-align: center;
+        margin: 0px auto;
+        padding: 10px;
+    }
+
+    #next {
+        background-color: #333;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 1.3px;
+        padding: 12px 30px;
+        margin: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        float: right;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-bar" id="nav-bar-1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Lessons</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav hide" id="sub-nav">
+            <div class="nav-bar" id="nav-bar-2">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li><a href="alphabet.html">Alphabet</a></li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li><a href="hiragana.html">Hiragana</a></li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li><a href="katakana.html">Katakana</a></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="japanesealphabet">
+            <div id="alphabet">
+                <h1>Japanese Alphabet</h1>
+                <p>The modern Japanese writing system uses a mix of “syllabaries”: the phonetic character sets are called <strong>Hiragana</strong> and <strong>Katakana</strong>, and the ideograms, Chinese in origin, are called <strong>Kanji</strong>. In normal Japanese writing, Kanji and Hiragana are used, while Katakana is used for words borrowed from the (non-Chinese) foreign languages.</p>
+            </div>
+            <hr>
+            <section id="hiragana">
+                <h2>Hiragana</h2>
+                <p>The Hiragana syllabary consists of 48 syllables and is mainly used to write word endings and native Japanese words for which no Kanji symbols are available, but it is also used to indicate the pronunciation of obscure, archaic and unusual Kanji.</p>
+                <div id="hiraganatable">
+                    <div id="hiraganatable1">
+                        <table>
+                            <tr>
+                                <td>あ</td>
+                                <td>い</td>
+                                <td>う</td>
+                                <td>え</td>
+                                <td>お</td>
+                            </tr>
+
+                            <tr>
+                                <td>か</td>
+                                <td>き</td>
+                                <td>く</td>
+                                <td>け</td>
+                                <td>こ</td>
+                            </tr>
+
+                            <tr>
+                                <td>さ</td>
+                                <td>し</td>
+                                <td>す</td>
+                                <td>せ</td>
+                                <td>そ</td>
+                            </tr>
+
+                            <tr>
+                                <td>た</td>
+                                <td>ち</td>
+                                <td>つ</td>
+                                <td>て</td>
+                                <td>と</td>
+                            </tr>
+
+                            <tr>
+                                <td>な</td>
+                                <td>に</td>
+                                <td>ぬ</td>
+                                <td>ね</td>
+                                <td>の</td>
+                            </tr>
+
+                            <tr>
+                                <td>は</td>
+                                <td>ひ</td>
+                                <td>ふ</td>
+                                <td>へ</td>
+                                <td>ほ</td>
+                            </tr>
+
+                            <tr>
+                                <td>ま</td>
+                                <td>み</td>
+                                <td>む</td>
+                                <td>め</td>
+                                <td>も</td>
+                            </tr>
+
+                            <tr>
+                                <td>や</td>
+                                <td></td>
+                                <td>ゆ</td>
+                                <td></td>
+                                <td>よ</td>
+                            </tr>
+
+                            <tr>
+                                <td>ら</td>
+                                <td>り</td>
+                                <td>る</td>
+                                <td>れ</td>
+                                <td>ろ</td>
+                            </tr>
+
+                            <tr>
+                                <td>わ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>を</td>
+                            </tr>
+
+                            <tr>
+                                <td>ん</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="hiraganatable2">
+                        <table>
+                            <tr>
+                                <td>が</td>
+                                <td>ぎ</td>
+                                <td>ぐ</td>
+                                <td>げ</td>
+                                <td>ご</td>
+                            </tr>
+
+                            <tr>
+                                <td>ざ</td>
+                                <td>じ</td>
+                                <td>ず</td>
+                                <td>ぜ</td>
+                                <td>ぞ</td>
+                            </tr>
+                            <tr>
+                                <td>だ</td>
+                                <td>ぢ</td>
+                                <td>づ</td>
+                                <td>で</td>
+                                <td>ど</td>
+                            </tr>
+                            <tr>
+                                <td>ば</td>
+                                <td>び</td>
+                                <td>ぶ</td>
+                                <td>べ</td>
+                                <td>ぼ</td>
+                            </tr>
+                            <tr>
+                                <td>ぱ</td>
+                                <td>ぴ</td>
+                                <td>ぷ</td>
+                                <td>ぺ</td>
+                                <td>ぽ</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="hiraganatable3">
+                        <table>
+                            <tr>
+                                <td>きゃ</td>
+                                <td>きゅ</td>
+                                <td>きょ</td>
+                            </tr>
+                            <tr>
+                                <td>しゃ</td>
+                                <td>しゅ</td>
+                                <td>しょ</td>
+                            </tr>
+                            <tr>
+                                <td>ちゃ</td>
+                                <td>ちゅ</td>
+                                <td>ちょ</td>
+                            </tr>
+                            <tr>
+                                <td>にゃ</td>
+                                <td>にゅ</td>
+                                <td>にょ</td>
+                            </tr>
+                            <tr>
+                                <td>ひゃ</td>
+                                <td>ひゅ</td>
+                                <td>ひょ</td>
+                            </tr>
+                            <tr>
+                                <td>みゃ</td>
+                                <td>みゅ</td>
+                                <td>みょ</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>りゃ</td>
+                                <td>りゅ</td>
+                                <td>りょ</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ぎゃ</td>
+                                <td>ぎゅ</td>
+                                <td>ぎょ</td>
+                            </tr>
+                            <tr>
+                                <td>じゃ</td>
+                                <td>じゅ</td>
+                                <td>じょ</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>びゃ</td>
+                                <td>びゅ</td>
+                                <td>びょ</td>
+                            </tr>
+                            <tr>
+                                <td>ぴゃ</td>
+                                <td>ぴゅ</td>
+                                <td>ぴょ</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="katakana">
+                <h2>Katakana</h2>
+                <p>Katakana is mainly used for word imported from foreign languages</p>
+                <div id="katakanatable">
+                    <div id="katakanatable1">
+                        <table>
+                            <tr>
+                                <td>ア</td>
+                                <td>イ</td>
+                                <td>ウ</td>
+                                <td>エ</td>
+                                <td>オ</td>
+                            </tr>
+
+                            <tr>
+                                <td>カ</td>
+                                <td>キ</td>
+                                <td>ク</td>
+                                <td>ケ</td>
+                                <td>コ</td>
+                            </tr>
+
+                            <tr>
+                                <td>サ</td>
+                                <td>シ</td>
+                                <td>ス</td>
+                                <td>セ</td>
+                                <td>ソ</td>
+                            </tr>
+
+                            <tr>
+                                <td>タ</td>
+                                <td>チ</td>
+                                <td>ツ</td>
+                                <td>テ</td>
+                                <td>ト</td>
+                            </tr>
+
+                            <tr>
+                                <td>ナ</td>
+                                <td>ニ</td>
+                                <td>ヌ</td>
+                                <td>ネ</td>
+                                <td>ノ</td>
+                            </tr>
+
+                            <tr>
+                                <td>ハ</td>
+                                <td>ヒ</td>
+                                <td>フ</td>
+                                <td>ヘ</td>
+                                <td>ホ</td>
+                            </tr>
+
+                            <tr>
+                                <td>マ</td>
+                                <td>ミ</td>
+                                <td>ム</td>
+                                <td>メ</td>
+                                <td>モ</td>
+                            </tr>
+
+                            <tr>
+                                <td>ヤ</td>
+                                <td></td>
+                                <td>ユ</td>
+                                <td></td>
+                                <td>ヨ</td>
+                            </tr>
+
+                            <tr>
+                                <td>ラ</td>
+                                <td>リ</td>
+                                <td>ル</td>
+                                <td>レ</td>
+                                <td>ロ</td>
+                            </tr>
+
+                            <tr>
+                                <td>ワ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>ヲ</td>
+                            </tr>
+
+                            <tr>
+                                <td>ン</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="katakanatable2">
+                        <table>
+                            <tr>
+                                <td>ガ</td>
+                                <td>ギ</td>
+                                <td>グ</td>
+                                <td>ゲ</td>
+                                <td>ゴ</td>
+                            </tr>
+
+                            <tr>
+                                <td>ザ</td>
+                                <td>ジ</td>
+                                <td>ズ</td>
+                                <td>ゼ</td>
+                                <td>ゾ</td>
+                            </tr>
+                            <tr>
+                                <td>ダ</td>
+                                <td>ヂ</td>
+                                <td>ヅ</td>
+                                <td>デ</td>
+                                <td>ド</td>
+                            </tr>
+                            <tr>
+                                <td>バ</td>
+                                <td>ビ</td>
+                                <td>ブ</td>
+                                <td>ベ</td>
+                                <td>ボ</td>
+                            </tr>
+                            <tr>
+                                <td>パ</td>
+                                <td>ピ</td>
+                                <td>プ</td>
+                                <td>ペ</td>
+                                <td>ポ</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="katakanatable3">
+                        <table>
+                            <tr>
+                                <td>キャ</td>
+                                <td>キュ</td>
+                                <td>キョ</td>
+                            </tr>
+                            <tr>
+                                <td>シャ</td>
+                                <td>シュ</td>
+                                <td>ショ</td>
+                            </tr>
+                            <tr>
+                                <td>チャ</td>
+                                <td>チュ</td>
+                                <td>チョ</td>
+                            </tr>
+                            <tr>
+                                <td>ニャ</td>
+                                <td>ニュ</td>
+                                <td>ニョ</td>
+                            </tr>
+                            <tr>
+                                <td>ヒャ</td>
+                                <td>ヒュ</td>
+                                <td>ヒョ</td>
+                            </tr>
+                            <tr>
+                                <td>ミャ</td>
+                                <td>ミュ</td>
+                                <td>ミョ</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>リャ</td>
+                                <td>リュ</td>
+                                <td>リョ</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ギャ</td>
+                                <td>ギュ</td>
+                                <td>ギョ</td>
+                            </tr>
+                            <tr>
+                                <td>ジャ</td>
+                                <td>ジュ</td>
+                                <td>ジョ</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ビャ</td>
+                                <td>ビュ</td>
+                                <td>ビョ</td>
+                            </tr>
+                            <tr>
+                                <td>ピャ</td>
+                                <td>ピュ</td>
+                                <td>ピョ</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="kanji">
+                <h2>Kanji</h2>
+                <p>Kanji, which are Chinese characters adapted for Japanese, are heavily used in writing.</p>
+                <label for="kanjiex">Example</label>
+                <div id="kanjiex">
+                    <p>父</p>
+                    <p>母</p>
+                    <p>家</p>
+                </div>
+            </section>
+            <hr>
+        </div>
+        <a href="index.html" class="next-previous" id="previous"> Previous </a>
+        <a href="hiragana.html" class="next-previous" id="next"> Next </a>
+    </main>
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nav-bar.js"></script>
+</body>
+
+</html>

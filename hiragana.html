@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hiragana</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+  main {
+    margin: 0px;
+  }
+
+  section {
+    margin: 0 20px;
+  }
+
+  table {
+    border: 1px white solid;
+    border-radius: 10px;
+    width: 100%;
+    background-color: darkgreen;
+    border-collapse: collapse;
+  }
+
+  table td {
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px;
+    color: white;
+    border-width: 0px 1px;
+    border-color: gray;
+    border-style: dashed;
+    width: 40px;
+  }
+
+
+  table tr:hover {
+    font-weight: 900;
+    background-color: red;
+  }
+
+  .hiraganatable {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .popup-image {
+    visibility: hidden;
+    position: absolute;
+    background: #ffffff;
+    border: 3px solid #666666;
+    left: 40%;
+    top: 30%;
+  }
+
+  .popup-image.active {
+    visibility: visible;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="nav-bar" id="nav-bar-1">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Lessons</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav hide" id="sub-nav">
+      <div class="nav-bar" id="nav-bar-2">
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="alphabet.html">Alphabet</a></li>
+          <li></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="hiragana.html">Hiragana</a></li>
+          <li></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="katakana.html">Katakana</a></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="hiragana">
+      <h1 class="upper-case">Hiragana</h1>
+      <section id="basic-hiragana">
+        <h2>Basic-hiragana</h2>
+        <p>Let's start with simple Hiragana</p>
+        <p><em>Please click the characters to see how they are written and pronounced</em></p>
+        <div class="hiraganatable">
+          <div id="hiraganatable1">
+            <table>
+              <tr id="a">
+                <td>あ</td>
+                <td>a</td>
+                <audio id="a-audio" src="audio/letters/a.m4a"></audio>
+                <img id="a-write" class="popup-image" src="image/letters/Hiragana/a.gif">
+              </tr>
+              <tr id="i">
+                <td>い</td>
+                <td>i</td>
+                <audio id="i-audio" src="audio/letters/i.m4a"></audio>
+                <img id="i-write" class="popup-image" src="image/letters/Hiragana/i.gif">
+              </tr>
+              <tr id="u">
+                <td>う</td>
+                <td>u</td>
+                <audio id="u-audio" src="audio/letters/u.m4a"></audio>
+                <img id="u-write" class="popup-image" src="image/letters/Hiragana/u.gif">
+              </tr>
+              <tr id="e">
+                <td>え</td>
+                <td>e</td>
+                <audio id="e-audio" src="audio/letters/e.m4a"></audio>
+                <img id="e-write" class="popup-image" src="image/letters/Hiragana/e.gif">
+              </tr>
+              <tr id="o">
+                <td>お</td>
+                <td>o</td>
+                <audio id="o-audio" src="audio/letters/o.m4a"></audio>
+                <img id="o-write" class="popup-image" src="image/letters/Hiragana/o.gif">
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable2">
+            <table>
+              <tr id="ka">
+                <td>か</td>
+                <td>ka</td>
+                <audio id="ka-audio" src="audio/letters/ka.m4a"></audio>
+                <img id="ka-write" class="popup-image" src="image/letters/Hiragana/ka.gif">
+              </tr>
+              <tr id="ki">
+                <td>き</td>
+                <td>ki</td>
+                <audio id="ki-audio" src="audio/letters/ki.m4a"></audio>
+                <img id="ki-write" class="popup-image" src="image/letters/Hiragana/ki.gif">
+              </tr>
+              <tr id="ku">
+                <td>く</td>
+                <td>ku</td>
+                <audio id="ku-audio" src="audio/letters/ku.m4a"></audio>
+                <img id="ku-write" class="popup-image" src="image/letters/Hiragana/ku.gif">
+              </tr>
+              <tr id="ke">
+                <td>け</td>
+                <td>ke</td>
+                <audio id="ke-audio" src="audio/letters/ke.m4a"></audio>
+                <img id="ke-write" class="popup-image" src="image/letters/Hiragana/ke.gif">
+              </tr>
+              <tr id="ko">
+                <td>こ</td>
+                <td>ko</td>
+                <audio id="ko-audio" src="audio/letters/ko.m4a"></audio>
+                <img id="ko-write" class="popup-image" src="image/letters/Hiragana/ko.gif">
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable3">
+            <table>
+              <tr id="sa">
+                <td>さ</td>
+                <td>sa</td>
+                <audio id="sa-audio" src="audio/letters/sa.m4a"></audio>
+                <img id="sa-write" class="popup-image" src="image/letters/Hiragana/sa.gif">
+              </tr>
+              <tr id="shi">
+                <td>し</td>
+                <td>shi</td>
+                <audio id="shi-audio" src="audio/letters/shi.m4a"></audio>
+                <img id="shi-write" class="popup-image" src="image/letters/Hiragana/shi.gif">
+              </tr>
+              <tr id="su">
+                <td>す</td>
+                <td>su</td>
+                <audio id="su-audio" src="audio/letters/su.m4a"></audio>
+                <img id="su-write" class="popup-image" src="image/letters/Hiragana/su.gif">
+              </tr>
+              <tr id="se">
+                <td>せ</td>
+                <td>se</td>
+                <audio id="se-audio" src="audio/letters/se.m4a"></audio>
+                <img id="se-write" class="popup-image" src="image/letters/Hiragana/se.gif">
+              </tr>
+              <tr id="so">
+                <td>そ</td>
+                <td>so</td>
+                <audio id="so-audio" src="audio/letters/so.m4a"></audio>
+                <img id="so-write" class="popup-image" src="image/letters/Hiragana/so.gif">
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable4">
+            <table>
+              <tr id="ta">
+                <td>た</td>
+                <td>ta</td>
+                <audio id="ta-audio" src="audio/letters/ta.m4a"></audio>
+                <img id="ta-write" class="popup-image" src="image/letters/Hiragana/ta.gif">
+              </tr>
+              <tr id="chi">
+                <td>ち</td>
+                <td>chi</td>
+                <audio id="chi-audio" src="audio/letters/chi.m4a"></audio>
+                <img id="chi-write" class="popup-image" src="image/letters/Hiragana/chi.gif">
+              </tr>
+              <tr id="tsu">
+                <td>つ</td>
+                <td>tsu</td>
+                <audio id="tsu-audio" src="audio/letters/tsu.m4a"></audio>
+                <img id="tsu-write" class="popup-image" src="image/letters/Hiragana/tsu.gif">
+              </tr>
+              <tr id="te">
+                <td>て</td>
+                <td>te</td><audio id="te-audio" src="audio/letters/te.m4a"></audio>
+                <img id="te-write" class="popup-image" src="image/letters/Hiragana/te.gif">
+              </tr>
+              <tr id="to">
+                <td>と</td>
+                <td>to</td>
+                <audio id="to-audio" src="audio/letters/to.m4a"></audio>
+                <img id="to-write" class="popup-image" src="image/letters/Hiragana/to.gif">
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable5">
+            <table>
+              <tr id="na">
+                <td>な</td>
+                <td>na</td>
+                <audio id="na-audio" src="audio/letters/na.m4a"></audio>
+                <img id="na-write" class="popup-image" src="image/letters/Hiragana/na.gif">
+              </tr>
+              <tr id="ni">
+                <td>に</td>
+                <td>ni</td>
+                <audio id="ni-audio" src="audio/letters/ni.m4a"></audio>
+                <img id="ni-write" class="popup-image" src="image/letters/Hiragana/ni.gif">
+              </tr>
+              <tr id="nu">
+                <td>ぬ</td>
+                <td>nu</td><audio id="nu-audio" src="audio/letters/nu.m4a"></audio>
+                <img id="nu-write" class="popup-image" src="image/letters/Hiragana/nu.gif">
+              </tr>
+              <tr id="ne">
+                <td>ね</td>
+                <td>ne</td>
+                <audio id="ne-audio" src="audio/letters/ne.m4a"></audio>
+                <img id="ne-write" class="popup-image" src="image/letters/Hiragana/ne.gif">
+              </tr>
+              <tr id="no">
+                <td>の</td>
+                <td>no</td>
+                <audio id="no-audio" src="audio/letters/no.m4a"></audio>
+                <img id="no-write" class="popup-image" src="image/letters/Hiragana/no.gif">
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable6">
+            <table>
+              <tr id="ha">
+                <td>は</td>
+                <td>ha</td>
+                <audio id="ha-audio" src="audio/letters/ha.m4a"></audio>
+                <img id="ha-write" class="popup-image" src="image/letters/Hiragana/ha.gif">
+              </tr>
+              <tr id="hi">
+                <td>ひ</td>
+                <td>hi</td>
+                <audio id="hi-audio" src="audio/letters/hi.m4a"></audio>
+                <img id="hi-write" class="popup-image" src="image/letters/Hiragana/hi.gif">
+              </tr>
+              <tr id="fu">
+                <td>ふ</td>
+                <td>fu</td>
+                <audio id="fu-audio" src="audio/letters/fu.m4a"></audio>
+                <img id="fu-write" class="popup-image" src="image/letters/Hiragana/fu.gif">
+              </tr>
+              <tr id="he">
+                <td>へ</td>
+                <td>he</td>
+                <audio id="he-audio" src="audio/letters/he.m4a"></audio>
+                <img id="he-write" class="popup-image" src="image/letters/Hiragana/he.gif">
+              </tr>
+              <tr id="ho">
+                <td>ほ</td>
+                <td>ho</td>
+                <audio id="ho-audio" src="audio/letters/ho.m4a"></audio>
+                <img id="ho-write" class="popup-image" src="image/letters/Hiragana/ho.gif">
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable7">
+            <table>
+              <tr id="ma">
+                <td>ま</td>
+                <td>ma</td>
+                <audio id="ma-audio" src="audio/letters/ma.m4a"></audio>
+                <img id="ma-write" class="popup-image" src="image/letters/Hiragana/ma.gif">
+              </tr>
+              <tr id="mi">
+                <td>み</td>
+                <td>mi</td>
+                <audio id="mi-audio" src="audio/letters/mi.m4a"></audio>
+                <img id="mi-write" class="popup-image" src="image/letters/Hiragana/mi.gif">
+              </tr>
+              <tr id="mu">
+                <td>む</td>
+                <td>mu</td>
+                <audio id="mu-audio" src="audio/letters/mu.m4a"></audio>
+                <img id="mu-write" class="popup-image" src="image/letters/Hiragana/mu.gif">
+              </tr>
+              <tr id="me">
+                <td>め</td>
+                <td>me</td>
+                <audio id="me-audio" src="audio/letters/me.m4a"></audio>
+                <img id="me-write" class="popup-image" src="image/letters/Hiragana/me.gif">
+              </tr>
+              <tr id="mo">
+                <td>も</td>
+                <td>mo</td>
+                <audio id="mo-audio" src="audio/letters/mo.m4a"></audio>
+                <img id="mo-write" class="popup-image" src="image/letters/Hiragana/mo.gif">
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable8">
+            <table>
+              <tr id="ya">
+                <td>や</td>
+                <td>ya</td>
+                <audio id="ya-audio" src="audio/letters/ya.m4a"></audio>
+                <img id="ya-write" class="popup-image" src="image/letters/Hiragana/ya.gif">
+              </tr>
+              <tr>
+                <td>・</td>
+                <td>・</td>
+              </tr>
+              <tr id="yu">
+                <td>ゆ</td>
+                <td>yu</td>
+                <audio id="yu-audio" src="audio/letters/yu.m4a"></audio>
+                <img id="yu-write" class="popup-image" src="image/letters/Hiragana/yu.gif">
+              </tr>
+              <tr>
+                <td>・</td>
+                <td>・</td>
+              </tr>
+              <tr id="yo">
+                <td>よ</td>
+                <td>yo</td>
+                <audio id="yo-audio" src="audio/letters/yo.m4a"></audio>
+                <img id="yo-write" class="popup-image" src="image/letters/Hiragana/yo.gif">
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable9">
+            <table>
+              <tr id="ra">
+                <td>ら</td>
+                <td>ra</td>
+                <audio id="ra-audio" src="audio/letters/ra.m4a"></audio>
+                <img id="ra-write" class="popup-image" src="image/letters/Hiragana/ra.gif">
+              </tr>
+              <tr id="ri">
+                <td>り</td>
+                <td>ri</td>
+                <audio id="ri-audio" src="audio/letters/ri.m4a"></audio>
+                <img id="ri-write" class="popup-image" src="image/letters/Hiragana/ri.gif">
+              </tr>
+              <tr id="ru">
+                <td>る</td>
+                <td>ru</td>
+                <audio id="ru-audio" src="audio/letters/ru.m4a"></audio>
+                <img id="ru-write" class="popup-image" src="image/letters/Hiragana/ru.gif">
+              </tr>
+              <tr id="re">
+                <td>れ</td>
+                <td>re</td>
+                <audio id="re-audio" src="audio/letters/re.m4a"></audio>
+                <img id="re-write" class="popup-image" src="image/letters/Hiragana/re.gif">
+              </tr>
+              <tr id="ro">
+                <td>ろ</td>
+                <td>ro</td>
+                <audio id="ro-audio" src="audio/letters/ro.m4a"></audio>
+                <img id="ro-write" class="popup-image" src="image/letters/Hiragana/ro.gif">
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable10">
+            <table>
+              <tr id="wa">
+                <td>わ</td>
+                <td>wa</td>
+                <audio id="wa-audio" src="audio/letters/wa.m4a"></audio>
+                <img id="wa-write" class="popup-image" src="image/letters/Hiragana/wa.gif">
+              </tr>
+              <tr>
+                <td>・</td>
+                <td>・</td>
+              </tr>
+              <tr>
+                <td>・</td>
+                <td>・</td>
+              </tr>
+              <tr>
+                <td>・</td>
+                <td>・</td>
+              </tr>
+              <tr id="wo">
+                <td>を</td>
+                <td>wo</td>
+                <audio id="wo-audio" src="audio/letters/wo.m4a"></audio>
+                <img id="wo-write" class="popup-image" src="image/letters/Hiragana/wo.gif">
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable11">
+            <table>
+              <tr>
+                <td>・</td>
+                <td>・</td>
+              </tr>
+              <tr>
+                <td>・</td>
+                <td>・</td>
+              </tr>
+              <tr>
+                <td>・</td>
+                <td>・</td>
+              </tr>
+              <tr>
+                <td>・</td>
+                <td>・</td>
+              </tr>
+              <tr id="n">
+                <td>ん</td>
+                <td> </td>
+                <audio id="n-audio" src="audio/letters/n.m4a"></audio>
+                <img id="n-write" class="popup-image" src="image/letters/Hiragana/n.gif">
+              </tr>
+            </table>
+          </div>
+        </div>
+        <p>Hiragana is the main alphabet for Japanese. There are 5 vowels in Japanese: <strong>a, i, u, e, o</strong>. All Hiragana characters end with one of these vowels, with the exception of <strong>"n"</strong>. You can see that there no "tones" in Japanese like in many other Asian languages. All the characters's pronounciations sounds similar to English, except <strong>"r"</strong>, which is a mixed of "L" and "R" in English.</p>
+        <p>Japanese words are the combinations of characters. For example, <strong>あした</strong> means <em>tomorrow</em> in English. There are also words with only one character too. For expample, <strong>は</strong> means <em>tooth</em>.</p>
+      </section>
+
+      <hr>
+
+      <section id="hiragana-with-marks">
+        <h2>Hiragana with Diacritical Marks</h2>
+        <div class="hiraganatable">
+          <div id="hiraganatable12">
+            <table>
+              <tr>
+                <td>が</td>
+                <td>ga</td>
+              </tr>
+              <tr>
+                <td>ぎ</td>
+                <td>gu</td>
+              </tr>
+              <tr>
+                <td>ぐ</td>
+                <td>gu</td>
+              </tr>
+              <tr>
+                <td>げ</td>
+                <td>ge</td>
+              </tr>
+              <tr>
+                <td>ご</td>
+                <td>go</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable13">
+            <table>
+              <tr>
+                <td>ざ</td>
+                <td>za</td>
+              </tr>
+              <tr>
+                <td>じ</td>
+                <td>ji</td>
+              </tr>
+              <tr>
+                <td>ず</td>
+                <td>zu</td>
+              </tr>
+              <tr>
+                <td>ぜ</td>
+                <td>ze</td>
+              </tr>
+              <tr>
+                <td>ぞ</td>
+                <td>zo</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable14">
+            <table>
+              <tr>
+                <td>だ</td>
+                <td>da</td>
+              </tr>
+              <tr>
+                <td>ぢ</td>
+                <td>di</td>
+              </tr>
+              <tr>
+                <td>づ</td>
+                <td>du</td>
+              </tr>
+              <tr>
+                <td>で</td>
+                <td>de</td>
+              </tr>
+              <tr>
+                <td>ど</td>
+                <td>do</td>
+              </tr>
+            </table>
+          </div>
+          <div id="hiraganatable15">
+            <table>
+              <tr>
+                <td>ば</td>
+                <td>ba</td>
+              </tr>
+              <tr>
+                <td>び</td>
+                <td>bi</td>
+              </tr>
+              <tr>
+                <td>ぶ</td>
+                <td>bu</td>
+              </tr>
+              <tr>
+                <td>べ</td>
+                <td>be</td>
+              </tr>
+              <tr>
+                <td>ぼ</td>
+                <td>bo</td>
+              </tr>
+            </table>
+          </div>
+          <div id="hiraganatable16">
+            <table>
+              <tr>
+                <td>ぱ</td>
+                <td>pa</td>
+              </tr>
+              <tr>
+                <td>ぴ</td>
+                <td>pi</td>
+              </tr>
+              <tr>
+                <td>ぷ</td>
+                <td>pu</td>
+              </tr>
+              <tr>
+                <td>ぺ</td>
+                <td>pe</td>
+              </tr>
+              <tr>
+                <td>ぽ</td>
+                <td>po</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <p>You can create additional sounds by adding diacritical marks. For example, by adding <strong>["]</strong> to <strong>か</strong>, we have the character <strong>が</strong>, by adding <strong>["]</strong> to <strong>て</strong>, we have the character <strong>で</strong>.</p>
+        <p>Remember that with the column <strong>[h]: は、ひ、ふ、へ、ほ</strong>, while adding <strong>["]</strong> make the sounds change to <strong>[b]</strong>, we can make <strong>[p]</strong> sounds by adding a small cirlce <strong>[o]</strong>.</p>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Hiragana with small や、ゆ、よ</h2>
+        <p>Finally, we can combine characters from the <strong>[i]</strong> lines except the character [i] (<strong>き、し、ち、...</strong>) with <strong>や、ゆ</strong> or <strong>よ</strong>.</p>
+        <div class="hiraganatable">
+          <div id="hiraganatable17">
+            <table>
+              <tr>
+                <td>きゃ</td>
+                <td>kya</td>
+              </tr>
+              <tr>
+                <td>きゅ</td>
+                <td>kyu</td>
+              </tr>
+              <tr>
+                <td>きょ</td>
+                <td>kyo</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable18">
+            <table>
+              <tr>
+                <td>しゃ</td>
+                <td>sha</td>
+              </tr>
+              <tr>
+                <td>しゅ</td>
+                <td>shu</td>
+              </tr>
+              <tr>
+                <td>しょ</td>
+                <td>sho</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable19">
+            <table>
+              <tr>
+                <td>ちゃ</td>
+                <td>cha</td>
+              </tr>
+              <tr>
+                <td>ちゅ</td>
+                <td>chu</td>
+              </tr>
+              <tr>
+                <td>ちょ</td>
+                <td>cho</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable20">
+            <table>
+              <tr>
+                <td>にゃ</td>
+                <td>nya</td>
+              </tr>
+              <tr>
+                <td>にゅ</td>
+                <td>nyu</td>
+              </tr>
+              <tr>
+                <td>にょ</td>
+                <td>nyo</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable21">
+            <table>
+              <tr>
+                <td>ひゃ</td>
+                <td>hya</td>
+              </tr>
+              <tr>
+                <td>ひゅ</td>
+                <td>hyu</td>
+              </tr>
+              <tr>
+                <td>ひょ</td>
+                <td>hyo</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable22">
+            <table>
+              <tr>
+                <td>みゃ</td>
+                <td>mya</td>
+              </tr>
+              <tr>
+                <td>みゅ</td>
+                <td>myu</td>
+              </tr>
+              <tr>
+                <td>みょ</td>
+                <td>myo</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable23">
+            <table>
+              <tr>
+                <td>りゃ</td>
+                <td>rya</td>
+              </tr>
+              <tr>
+                <td>りゅ</td>
+                <td>ryu</td>
+              </tr>
+              <tr>
+                <td>りょ</td>
+                <td>ryo</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable24">
+            <table>
+              <tr>
+                <td>ぎゃ</td>
+                <td>gya</td>
+              </tr>
+              <tr>
+                <td>ぎゅ</td>
+                <td>gyu</td>
+              </tr>
+              <tr>
+                <td>ぎょ</td>
+                <td>gyo</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable25">
+            <table>
+              <tr>
+                <td>じゃ</td>
+                <td>ja</td>
+              </tr>
+              <tr>
+                <td>じゅ</td>
+                <td>ju</td>
+              </tr>
+              <tr>
+                <td>じょ</td>
+                <td>jo</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable26">
+            <table>
+              <tr>
+                <td>びゃ</td>
+                <td>bya</td>
+              </tr>
+              <tr>
+                <td>びゅ</td>
+                <td>byu</td>
+              </tr>
+              <tr>
+                <td>びょ</td>
+                <td>byo</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="hiraganatable27">
+            <table>
+              <tr>
+                <td>ぴゃ</td>
+                <td>pya</td>
+              </tr>
+              <tr>
+                <td>ぴゅ</td>
+                <td>pyu</td>
+              </tr>
+              <tr>
+                <td>ぴょ</td>
+                <td>pyo</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <a href="alphabet.html" class="next-previous" id="previous">
+        Previous </a>
+      <a href="hiragana-quiz-1.html" class="next-previous" id="next"> Next
+      </a>
+    </div>
+  </main>
+  <!-- jQuery library -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/nav-bar.js"></script>
+  <script src="js/hiragana-katakana.js"></script>
+</body>
+
+</html>

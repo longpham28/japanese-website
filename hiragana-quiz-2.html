@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>hiragana quiz</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <meta http-equiv="content-type" charset="utf-8">
+
+</head>
+
+<style>
+  main {
+    margin: 0px;
+  }
+
+  section {
+    margin: 0 20px;
+  }
+
+  table {
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 70%;
+  }
+
+  tr:nth-child(even) {
+    background-color: #CCFFFF;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #99FFFF;
+  }
+
+  tr:hover {
+    cursor: pointer;
+  }
+
+  td {
+    border: 1px solid black;
+    height: 50px;
+  }
+
+  .question {
+    background-color: #0099FF !important;
+    cursor: default !important;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .wrong-answer.wrong {
+    background-color: red !important;
+    border: 1px solid red !important;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .next-previous-question {
+    background-color: #333;
+    font-family: 'Raleway', sans-serif;
+    padding: 12px 30px;
+    margin: 10px;
+  }
+
+  .next-previous-question a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="nav-bar" id="nav-bar-1">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Lessons</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav hide" id="sub-nav">
+      <div class="nav-bar" id="nav-bar-2">
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="alphabet.html">Alphabet</a></li>
+          <li></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="hiragana.html">Hiragana</a></li>
+          <li></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="katakana">Katakana</a></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="upper-case">hiragana quiz</h1>
+    <section class="introduction">
+    </section>
+
+    <hr>
+
+    <section id="hiragana-quiz">
+      <div class="hiragana-quiz">
+        <table id="quiz">
+          <tr>
+            <td class="question bold" colspan="2"></td>
+          </tr>
+          <tr>
+            <td class="answer" id="1st-answer" colspan="2"></td>
+          </tr>
+          <tr>
+            <td class="answer" id="2nd-answer" colspan="2"></td>
+          </tr>
+          <tr>
+            <td class="answer" id="3rd-answer" colspan="2"></td>
+          </tr>
+          <tr>
+            <td class="answer" id="4th-answer" colspan="2"></td>
+          </tr>
+          <tr>
+            <td class="judgment bold" colspan="2"></td>
+          </tr>
+          <tr class="next-previous hide">
+            <td class="next-previous-question" style="width:50%"><a href="hiragana-quiz-1.html">Previous question</a></td>
+            <td class="next-previous-question" style="width:50%"><a href="hiragana-quiz-3.html">Next question</a></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+  <!-- jQuery library -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/nav-bar.js"></script>
+  <script src="js/hiragana-quiz-1-2.js"></script>
+</body>
+
+</html>

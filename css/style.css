@@ -1,0 +1,84 @@
+body {
+    font-family: Georgia;
+}
+
+header {
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    top: 0px;
+    opacity: 0.95;
+}
+
+.nav li {
+    display: inline-block;
+    color: white;
+    width: 130px;
+    text-align: center;
+    position: relative;
+    right: 40px;
+}
+
+.nav li:hover {
+    font-weight: bold;
+}
+
+.nav {
+    margin: 0;
+    padding: 20px 0;
+
+}
+
+#sub-nav {
+    padding: 0 0 20px 0;
+}
+
+#sub-nav li {
+    height: 22px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    position: relative;
+    top: 90px;
+}
+
+.next-previous {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 12px 30px;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+#next {
+    float: right;
+}
+
+#previous {
+    float: left;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
