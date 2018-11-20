@@ -1,11 +1,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #efefef;
+    background-color: white;
     color: #222233;
 }
 
 header {
-    background-color: white;
+    background-color: #232323;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -16,7 +16,6 @@ header {
 
 .nav li {
     display: inline-block;
-    color: white;
     width: 130px;
     text-align: center;
     position: relative;
@@ -42,7 +41,7 @@ header {
 }
 
 .nav a {
-    color: #222233;
+    color: white;
     text-decoration: none
 }
 
@@ -70,7 +69,7 @@ main {
 }
 
 .next-previous:hover {
-    background-color: white;
+    background-color: #efefef;
 }
 
 #next {
