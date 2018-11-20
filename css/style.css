@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: #333333;
+    background-color: #222233;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -54,7 +54,7 @@ main {
 }
 
 .next-previous {
-    background-color: #333;
+    background-color: #222233;
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
