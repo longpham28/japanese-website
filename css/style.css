@@ -1,9 +1,11 @@
 body {
-    font-family: Georgia;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #efefef;
+    color: #222233;
 }
 
 header {
-    background-color: #222233;
+    background-color: white;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -40,7 +42,7 @@ header {
 }
 
 .nav a {
-    color: white;
+    color: #222233;
     text-decoration: none
 }
 

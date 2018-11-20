@@ -4,21 +4,16 @@
 <head>
     <title>Japanese Learning</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <style>
     .background {
-        background-color: white;
-        min-height: 800px;
-        background-image: url("image/japan-flag-640.jpg");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
+        text-align: center;
+        height: 1000px;
     }
 
     .background h1 {
-        color: black;
-        font-family: 'Raleway', sans-serif;
+        color: #222233;
         font-weight: 600;
         font-size: 50px;
         margin-top: 0px;
@@ -27,27 +22,34 @@
         text-transform: uppercase;
     }
 
-    #getstarted {
-        background-color: #333;
-        color: #fff;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
-        font-size: 18px;
-        letter-spacing: 1.3px;
-        padding: 16px 40px;
+    #japan-flag {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50%;
+    }
+
+    .getstarted {
+        display: block;
+        position: relative;
+        top: 100px;
+        text-align: center;
+    }
+
+
+    .getstarted a {
         text-decoration: none;
         text-transform: uppercase;
+        color: #222233;
+        font-weight: 900;
+        font-size: 20px;
+        border: 3px solid white;
+        padding: 50px;
+        border-radius: 10px;
     }
 
-    .getstarted:hover {
-        color: bisque;
-    }
-
-    .container {
-        max-width: 940px;
-        margin: 0 auto;
-        padding: 0 10px;
-        text-align: center;
+    .getstarted a:hover {
+        background-color: white;
     }
 </style>
 
@@ -90,10 +92,12 @@
     </header>
     <main>
         <div class="background">
-            <div class="container">
-                <h1>Japanese Learning Website</h1>
+            <h1>Japanese Learning Website</h1>
+            <img id="japan-flag" src="image/japan-2.png" />
+            <div class="getstarted">
                 <a href="alphabet.html" id="getstarted">Get started</a>
             </div>
+
         </div>
     </main>
     <!-- jQuery library -->
