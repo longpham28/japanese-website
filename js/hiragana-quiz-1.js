@@ -63,10 +63,11 @@ $(document).ready(() => {
     $("#1st-answer").on('click', () => {
       $(".answer").not("#1st-answer").html("");
       $(".judgment").css({
-        "background-color": "blue",
+        "background-color": "#2e2e44",
         "color": "white "
       })
       $(".judgment").html("CORRECT ANSWER!");
+      $(".judgment").show();
       $(".next-previous").fadeIn();
     });
     $(".answer").not("#1st-answer").on('click', (event) => {
@@ -76,6 +77,7 @@ $(document).ready(() => {
         "background-color": "red"
       });
       $(".judgment").html("WRONG ANSWER!");
+      $(".judgment").show();
     })
   }
 
@@ -83,10 +85,11 @@ $(document).ready(() => {
     $("#2nd-answer").on('click', () => {
       $(".answer").not("#2nd-answer").html("");
       $(".judgment").css({
-        "background-color": "blue",
+        "background-color": "#2e2e44",
         "color": "white "
       })
       $(".judgment").html("CORRECT ANSWER!");
+      $(".judgment").show();
       $(".next-previous").fadeIn();
     });
     $(".answer").not("#2nd-answer").on('click', (event) => {
@@ -96,6 +99,7 @@ $(document).ready(() => {
         "background-color": "red"
       });
       $(".judgment").html("WRONG ANSWER!");
+      $(".judgment").show();
     });
 
   }
@@ -103,10 +107,11 @@ $(document).ready(() => {
     $("#3rd-answer").on('click', () => {
       $(".answer").not("#3rd-answer").html("");
       $(".judgment").css({
-        "background-color": "blue",
+        "background-color": "#2e2e44",
         "color": "white "
       })
       $(".judgment").html("CORRECT ANSWER!");
+      $(".judgment").show();
       $(".next-previous").fadeIn();
     });
     $(".answer").not("#3rd-answer").on('click', (event) => {
@@ -116,6 +121,7 @@ $(document).ready(() => {
         "background-color": "red"
       });
       $(".judgment").html("WRONG ANSWER!");
+      $(".judgment").show();
     });
   }
 
@@ -123,10 +129,11 @@ $(document).ready(() => {
     $("#4th-answer").on('click', () => {
       $(".answer").not("#4th-answer").html("");
       $(".judgment").css({
-        "background-color": "blue",
+        "background-color": "#2e2e44",
         "color": "white "
       })
       $(".judgment").html("CORRECT ANSWER!");
+      $(".judgment").show();
       $(".next-previous").fadeIn();
     });
     $(".answer").not("#4th-answer").on('click', (event) => {
@@ -136,7 +143,7 @@ $(document).ready(() => {
         "background-color": "red"
       });
       $(".judgment").html("WRONG ANSWER!");
+      $(".judgment").show();
     });
   }
-
 });

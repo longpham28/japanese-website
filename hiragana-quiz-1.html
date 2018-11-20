@@ -25,16 +25,14 @@
     width: 70%;
   }
 
-  tr:nth-child(even) {
-    background-color: #CCFFFF;
-  }
-
-  tr:nth-child(odd) {
-    background-color: #99FFFF;
+  tr {
+    background-color: white;
+    color: black;
   }
 
   tr:hover {
     cursor: pointer;
+    background-color: #f5f5f5;
   }
 
   td {
@@ -42,14 +40,16 @@
     height: 50px;
   }
 
-  .question,
-  .question-number {
-    background-color: #0099FF !important;
+  th {
+    background-color: #2e2e44 !important;
     cursor: default !important;
     font-family: 'Raleway', sans-serif;
     padding: 15px;
     font-size: 20px;
+    color: white;
+    padding: 30px;
   }
+
 
   .wrong-answer.wrong {
     background-color: red !important;
@@ -61,10 +61,9 @@
   }
 
   .next-previous-question {
-    background-color: #333;
+    background-color: #2e2e44;
     font-family: 'Raleway', sans-serif;
-    padding: 12px 30px;
-    margin: 10px;
+    padding: 15px;
   }
 
   .next-previous-question a {
@@ -72,8 +71,6 @@
     text-transform: uppercase;
     color: #fff;
     font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 1.3px;
   }
 
   .bold {
@@ -128,7 +125,7 @@
       <div class="hiragana-quiz">
         <table id="quiz">
           <tr>
-            <td class="question bold"></td>
+            <th class="question bold"></th>
           </tr>
           <tr>
             <td class="answer" id="1st-answer"></td>
@@ -143,7 +140,7 @@
             <td class="answer" id="4th-answer"></td>
           </tr>
           <tr>
-            <td class="judgment bold"></td>
+            <td class="judgment hide bold"></td>
           </tr>
           <tr class="next-previous hide">
             <td class="next-previous-question"><a href="hiragana-quiz-2.html">Next question</a></td>
