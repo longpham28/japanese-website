@@ -33,12 +33,23 @@
         margin: 20px;
     }
 
+    #hiragana,
+    #katakana,
+    #kanji {
+        text-align: center;
+        margin-top: 50px;
+    }
+
     #hiraganatable,
     #katakanatable {
         display: grid;
         grid-gap: 0px;
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(17, 1fr);
+        margin: 20px auto;
+        padding: 20px;
+        width: 80%;
+
     }
 
     #hiraganatable1,
@@ -62,13 +73,6 @@
         margin: 0px;
     }
 
-    #hiraganatable,
-    #katakanatable {
-        margin: 20px auto;
-        padding: 20px;
-        width: 80%;
-    }
-
     #kanji label {
         display: inline-block;
         margin: 10px;
@@ -85,8 +89,7 @@
         border: solid 1px black;
         border-radius: 10px;
         text-align: center;
-        background-color: #3c6478;
-        color: white;
+        font-weight: bold;
         padding: 10px;
         margin: 10px;
     }
@@ -134,6 +137,7 @@
                 <p>The modern Japanese writing system uses a mix of “syllabaries”: the phonetic character sets are called <strong>Hiragana</strong> and <strong>Katakana</strong>, and the ideograms, Chinese in origin, are called <strong>Kanji</strong>. In normal Japanese writing, Kanji and Hiragana are used, while Katakana is used for words borrowed from the (non-Chinese) foreign languages.</p>
             </div>
             <hr>
+
             <section id="hiragana">
                 <h2>Hiragana</h2>
                 <p>The Hiragana syllabary consists of 48 syllables and is mainly used to write word endings and native Japanese words for which no Kanji symbols are available, but it is also used to indicate the pronunciation of obscure, archaic and unusual Kanji.</p>
