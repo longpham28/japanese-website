@@ -56,8 +56,7 @@ main {
 }
 
 .next-previous {
-    background-color: #222233;
-    color: #fff;
+    color: #222233;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -66,7 +65,12 @@ main {
     margin: 10px;
     text-decoration: none;
     text-transform: uppercase;
+    border: 1px solid white;
     border-radius: 5px;
+}
+
+.next-previous:hover {
+    background-color: white;
 }
 
 #next {
