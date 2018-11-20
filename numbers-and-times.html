@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+  <title>Number and Time</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <meta http-equiv="content-type" charset="utf-8">
+
+</head>
+
+<style>
+  main {
+    margin: 0px;
+  }
+
+  section {
+    margin: 20px;
+  }
+
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    width: 25%;
+  }
+
+  th:hover,
+  td:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="nav-bar" id="nav-bar-1">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Lessons</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav hide" id="sub-nav">
+      <div class="nav-bar" id="nav-bar-2">
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="alphabet.html">Alphabet</a></li>
+          <li></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="Hiragana.html">Hiragana</a></li>
+          <li></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li><a href="katakana.html">Katakana</a></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1 class="upper-case">Numbers and Time</h1>
+      <p>In this lesson, we will learn how to say numbers and time in japanese.</p>
+    </section>
+
+    <hr>
+    <section class="number">
+      <h2 class="upper-case">Number</h2>
+
+      <div class="number-table">
+        <table id="number-table">
+          <tr>
+            <th scope="col">
+              漢字
+              <br>
+              Kanji
+            </th>
+            <th scope="col">
+              ひらがな
+              <br>
+              Hiragana
+            </th>
+            <th scope="col">
+              ローマ字
+              <br>
+              Romaji
+            </th>
+            <th scope="col">
+              English Meaning
+            </th>
+          </tr>
+
+          <tr id="1">
+            <td>一</td>
+            <td>いち</td>
+            <td>ichi</td>
+            <td>One</td>
+            <audio id="1-audio" src="audio/number/1.m4a"></audio>
+          </tr>
+
+          <tr id="2">
+            <td>二</td>
+            <td>に</td>
+            <td>ni</td>
+            <td>Two</td>
+            <audio id="2-audio" src="audio/phrases/2.m4a"></audio>
+          </tr>
+
+          <tr id="3">
+            <td>三</td>
+            <td>さん</td>
+            <td>san</td>
+            <td>Three</td>
+            <audio id="3-audio" src="audio/phrases/3.m4a"></audio>
+
+          </tr>
+
+          <tr id="4">
+            <td>四</td>
+            <td>よん</td>
+            <td>yon</td>
+            <td>Four</td>
+            <audio id="4-audio" src="audio/phrases/4.m4a"></audio>
+          </tr>
+
+          <tr id="5">
+            <td>五</td>
+            <td>ご</td>
+            <td>go</td>
+            <td>Five</td>
+            <audio id="5-audio" src="audio/phrases/5.m4a"></audio>
+          </tr>
+
+          <tr id="6">
+            <td>六</td>
+            <td>ろく</td>
+            <td>roku</td>
+            <td>Six</td>
+            <audio id="6-audio" src="audio/phrases/6.m4a"></audio>
+          </tr>
+
+          <tr id="7">
+            <td>七</td>
+            <td>なな</td>
+            <td>nana</td>
+            <td>Seven</td>
+            <audio id="7-audio" src="audio/phrases/7.m4a"></audio>
+          </tr>
+
+          <tr id="8">
+            <td>八</td>
+            <td>はち</td>
+            <td>hachi</td>
+            <td>Eight</td>
+            <audio id="8-audio" src="audio/phrases/8.m4a"></audio>
+          </tr>
+
+          <tr id="9">
+            <td>九</td>
+            <td>きゅう</td>
+            <td>kyuu</td>
+            <td>Nine</td>
+            <audio id="9-audio" src="audio/phrases/9.m4a"></audio>
+          </tr>
+
+          <tr id="10">
+            <td>十</td>
+            <td>じゅう</td>
+            <td>juuu</td>
+            <td>Ten</td>
+            <audio id="10-audio" src="audio/phrases/10.m4a"></audio>
+          </tr>
+
+          <tr id="11">
+            <td>十一</td>
+            <td>じゅういち</td>
+            <td>juuichi</td>
+            <td>Eleven</td>
+            <audio id="11-audio" src="audio/phrases/11.m4a"></audio>
+          </tr>
+
+
+        </table>
+      </div>
+    </section>
+    <a href="vocabulary.html" class="next-previous" id="previous"> Previous </a>
+    <a href="#" class="next-previous" id="next"> Next </a>
+  </main>
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/nav-bar.js"></script>
+  <script src="js/basic-phrases.js"></script>
+</body>
+
+</html>
