@@ -18,124 +18,159 @@ let wrongAnswer1 = new quiz();
 let wrongAnswer2 = new quiz();
 let wrongAnswer3 = new quiz();
 
-correctAnswer.getCharacters();
-wrongAnswer1.getCharacters();
-wrongAnswer2.getCharacters();
-wrongAnswer3.getCharacters();
+let firstAnswer = "";
+let secondAnswer = "";
+let thirdAnswer = "";
+let fourthAnswer = "";
 
-while (1 > 0) {
-  if (correctAnswer == wrongAnswer1 || correctAnswer == wrongAnswer2 || correctAnswer == wrongAnswer3 || wrongAnswer1 == wrongAnswer2 || wrongAnswer1 == wrongAnswer3 || wrongAnswer2 == wrongAnswer3) {
+
+function getAnswers() {
+  let choices = [];
+
+  function answers() {
+    correctAnswer.getCharacters();
     wrongAnswer1.getCharacters();
     wrongAnswer2.getCharacters();
     wrongAnswer3.getCharacters();
-  } else break;
+
+    while (1 > 0) {
+      if (correctAnswer == wrongAnswer1 || correctAnswer == wrongAnswer2 || correctAnswer == wrongAnswer3 || wrongAnswer1 == wrongAnswer2 || wrongAnswer1 == wrongAnswer3 || wrongAnswer2 == wrongAnswer3) {
+        wrongAnswer1.getCharacters();
+        wrongAnswer2.getCharacters();
+        wrongAnswer3.getCharacters();
+      } else break;
+    }
+
+    choices = [correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3];
+  }
+
+  answers();
+
+  firstAnswer = choices[Math.floor(Math.random() * choices.length)].katakana;
+  secondAnswer = choices[Math.floor(Math.random() * choices.length)].katakana;
+  thirdAnswer = choices[Math.floor(Math.random() * choices.length)].katakana;
+  fourthAnswer = choices[Math.floor(Math.random() * choices.length)].katakana;
+
+  while (1 > 0) {
+    if (firstAnswer == secondAnswer || firstAnswer == thirdAnswer || firstAnswer == fourthAnswer || secondAnswer == thirdAnswer || secondAnswer == fourthAnswer || thirdAnswer == fourthAnswer) {
+      secondAnswer = choices[Math.floor(Math.random() * choices.length)].katakana;
+      thirdAnswer = choices[Math.floor(Math.random() * choices.length)].katakana;
+      fourthAnswer = choices[Math.floor(Math.random() * choices.length)].katakana;
+    } else break;
+  }
 }
-
-
-let choice = [correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3];
-
-let firstAnswer = choice[Math.floor(Math.random() * choice.length)].katakana;
-let secondAnswer = choice[Math.floor(Math.random() * choice.length)].katakana;
-let thirdAnswer = choice[Math.floor(Math.random() * choice.length)].katakana;
-let fourthAnswer = choice[Math.floor(Math.random() * choice.length)].katakana;
-
-while (1 > 0) {
-  if (firstAnswer == secondAnswer || firstAnswer == thirdAnswer || firstAnswer == fourthAnswer || secondAnswer == thirdAnswer || secondAnswer == fourthAnswer || thirdAnswer == fourthAnswer) {
-    secondAnswer = choice[Math.floor(Math.random() * choice.length)].katakana;
-    thirdAnswer = choice[Math.floor(Math.random() * choice.length)].katakana;
-    fourthAnswer = choice[Math.floor(Math.random() * choice.length)].katakana;
-  } else break;
-}
-
-console.log(firstAnswer);
 
 
 $(document).ready(() => {
-  $(".question").html("HOW DO WE WRITE [" + correctAnswer.romaji + "] IN JAPANESE");
+  const outPut = () => {
+    getAnswers();
+    $(".question").html("HOW DO WE WRITE [" + correctAnswer.romaji + "]");
 
-  $("#1st-answer").html(firstAnswer);
-  $("#2nd-answer").html(secondAnswer);
-  $("#3rd-answer").html(thirdAnswer);
-  $("#4th-answer").html(fourthAnswer);
+    $("#1st-answer").html(firstAnswer);
+    $("#2nd-answer").html(secondAnswer);
+    $("#3rd-answer").html(thirdAnswer);
+    $("#4th-answer").html(fourthAnswer);
 
-  if (firstAnswer == correctAnswer.katakana) {
-    $("#1st-answer").on('click', () => {
-      $(".answer").not("#1st-answer").html("");
-      $(".judgment").css({
-        "background-color": "blue",
-        "color": "white "
-      })
-      $(".judgment").html("CORRECT ANSWER!");
-      $(".next-previous").fadeIn();
-    });
-    $(".answer").not("#1st-answer").on('click', (event) => {
-      $(event.currentTarget).html("");
-      $(".judgment").css({
-        "color": "white",
-        "background-color": "red"
+    if (firstAnswer == correctAnswer.katakana) {
+      $("#1st-answer").on('click', () => {
+        $(".answer").addClass("deactive");
+        $(".answer").off('click');
+        $(".answer").not("#1st-answer").html("");
+        $(".judgment").css({
+          "background-color": "#222233",
+          "color": "white "
+        })
+        $(".judgment").html("CORRECT ANSWER!");
+        $(".judgment").show();
+        $(".next-question").fadeIn();
       });
-      $(".judgment").html("WRONG ANSWER!");
-    })
+      $(".answer").not("#1st-answer").on('click', (event) => {
+        $(event.currentTarget).html("");
+        $(".judgment").css({
+          "color": "white",
+          "background-color": "red"
+        });
+        $(".judgment").html("WRONG ANSWER!");
+        $(".judgment").show();
+      })
+    }
+
+    if (secondAnswer == correctAnswer.katakana) {
+      $("#2nd-answer").on('click', () => {
+        $(".answer").addClass("deactive");
+        $(".answer").off('click');
+        $(".answer").not("#2nd-answer").html("");
+        $(".judgment").css({
+          "background-color": "#222233",
+          "color": "white "
+        })
+        $(".judgment").html("CORRECT ANSWER!");
+        $(".judgment").show();
+        $(".next-question").fadeIn();
+      });
+      $(".answer").not("#2nd-answer").on('click', (event) => {
+        $(event.currentTarget).html("");
+        $(".judgment").css({
+          "color": "white",
+          "background-color": "red"
+        });
+        $(".judgment").html("WRONG ANSWER!");
+        $(".judgment").show();
+      });
+
+    }
+    if (thirdAnswer == correctAnswer.katakana) {
+      $("#3rd-answer").on('click', () => {
+        $(".answer").addClass("deactive");
+        $(".answer").off('click');
+        $(".answer").not("#3rd-answer").html("");
+        $(".judgment").css({
+          "background-color": "#222233",
+          "color": "white "
+        })
+        $(".judgment").html("CORRECT ANSWER!");
+        $(".judgment").show();
+        $(".next-question").fadeIn();
+      });
+      $(".answer").not("#3rd-answer").on('click', (event) => {
+        $(event.currentTarget).html("");
+        $(".judgment").css({
+          "color": "white",
+          "background-color": "red"
+        });
+        $(".judgment").html("WRONG ANSWER!");
+        $(".judgment").show();
+      });
+    }
+
+    if (fourthAnswer == correctAnswer.katakana) {
+      $("#4th-answer").on('click', () => {
+        $(".answer").addClass("deactive");
+        $(".answer").off('click');
+        $(".answer").not("#4th-answer").html("");
+        $(".judgment").css({
+          "background-color": "#222233",
+          "color": "white "
+        })
+        $(".judgment").html("CORRECT ANSWER!");
+        $(".judgment").show();
+        $(".next-question").fadeIn();
+      });
+      $(".answer").not("#4th-answer").on('click', (event) => {
+        $(event.currentTarget).html("");
+        $(".judgment").css({
+          "color": "white",
+          "background-color": "red"
+        });
+        $(".judgment").html("WRONG ANSWER!");
+        $(".judgment").show();
+      });
+    }
   }
 
-  if (secondAnswer == correctAnswer.katakana) {
-    $("#2nd-answer").on('click', () => {
-      $(".answer").not("#2nd-answer").html("");
-      $(".judgment").css({
-        "background-color": "blue",
-        "color": "white "
-      })
-      $(".judgment").html("CORRECT ANSWER!");
-      $(".next-previous").fadeIn();
-    });
-    $(".answer").not("#2nd-answer").on('click', (event) => {
-      $(event.currentTarget).html("");
-      $(".judgment").css({
-        "color": "white",
-        "background-color": "red"
-      });
-      $(".judgment").html("WRONG ANSWER!");
-    });
+  outPut();
 
-  }
-  if (thirdAnswer == correctAnswer.katakana) {
-    $("#3rd-answer").on('click', () => {
-      $(".answer").not("#3rd-answer").html("");
-      $(".judgment").css({
-        "background-color": "blue",
-        "color": "white "
-      })
-      $(".judgment").html("CORRECT ANSWER!");
-      $(".next-previous").fadeIn();
-    });
-    $(".answer").not("#3rd-answer").on('click', (event) => {
-      $(event.currentTarget).html("");
-      $(".judgment").css({
-        "color": "white",
-        "background-color": "red"
-      });
-      $(".judgment").html("WRONG ANSWER!");
-    });
-  }
-
-  if (fourthAnswer == correctAnswer.katakana) {
-    $("#4th-answer").on('click', () => {
-      $(".answer").not("#4th-answer").html("");
-      $(".judgment").css({
-        "background-color": "blue",
-        "color": "white "
-      })
-      $(".judgment").html("CORRECT ANSWER!");
-      $(".next-previous").fadeIn();
-    });
-    $(".answer").not("#4th-answer").on('click', (event) => {
-      $(event.currentTarget).html("");
-      $(".judgment").css({
-        "color": "white",
-        "background-color": "red"
-      });
-      $(".judgment").html("WRONG ANSWER!");
-    });
-  }
-
+  $(".next-question").on('click', () => {
+    location.reload()
+  });
 });
