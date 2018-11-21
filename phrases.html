@@ -4,6 +4,7 @@
 <head>
   <title>Phrase</title>
   <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <meta http-equiv="content-type" charset="utf-8">
 
 </head>
@@ -20,7 +21,9 @@
   table {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 70%
+    width: 70%;
+    color: black;
+    border-radius: 10px;
   }
 
   th,
@@ -28,14 +31,21 @@
     border: 1px solid black;
     text-align: center;
     align-items: center;
-    padding: 5px;
+    padding: 7px;
     width: 25%;
   }
 
-  th:hover,
+  th {
+    background-color: white !important;
+  }
+
+
   td:hover {
-    font-weight: bold;
     cursor: pointer;
+  }
+
+  tr:hover {
+    background-color: #efefef;
   }
 
   .greeting-table {
@@ -240,8 +250,10 @@
         </table>
       </div>
     </section>
-    <a href="vocabulary.html" class="next-previous" id="previous"> Previous </a>
-    <a href="#" class="next-previous" id="next"> Next </a>
+    <div class="footer">
+      <a href="vocabulary-quiz-2.html" class="next-previous" id="previous">&#10094;</a>
+      <a href="phrases-quiz-1.html" class="next-previous" id="next">&#10095;</a>
+    </div>
   </main>
   <script src="js/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
