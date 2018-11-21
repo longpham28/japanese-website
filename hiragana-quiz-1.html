@@ -26,7 +26,7 @@
   table {
     margin: 20px auto;
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid black;
     border-collapse: collapse;
     width: 70%;
   }
@@ -41,18 +41,24 @@
     background-color: #f5f5f5;
   }
 
+  .deactive {
+    background-color: white !important;
+    cursor: default !important;
+  }
+
   td {
     border: 1px solid black;
     height: 50px;
   }
 
   th {
-    background-color: #2e2e44 !important;
+    background-color: white !important;
     cursor: default !important;
     padding: 15px;
     font-size: 20px;
-    color: white;
+    color: #222233;
     padding: 30px;
+
   }
 
 
@@ -65,17 +71,12 @@
     display: none;
   }
 
-  .next-previous-question {
-    background-color: #2e2e44;
-    font-family: 'Raleway', sans-serif;
+  .next-question {
+    background-color: #222233 !important;
     padding: 15px;
-  }
-
-  .next-previous-question a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
     font-weight: 600;
+    font-size: 40px;
+    color: white;
   }
 
   .bold {
@@ -147,14 +148,14 @@
           <tr>
             <td class="judgment hide bold"></td>
           </tr>
-          <tr class="next-previous hide">
-            <td class="next-previous-question"><a href="hiragana-quiz-2.html">Next question</a></td>
+          <tr class="next-question hide">
+            <td>&#8635;</td>
           </tr>
         </table>
       </div>
     </section>
     <a href="hiragana.html" class="next-previous" id="previous">&#10094;</a>
-    <a href="katakana.html" class="next-previous" id="next">&#10095;</a>
+    <a href="hiragana-quiz-2.html" class="next-previous" id="next">&#10095;</a>
 
   </main>
   <!-- jQuery library -->
