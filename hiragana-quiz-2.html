@@ -4,6 +4,7 @@
 <head>
   <title>hiragana quiz</title>
   <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <meta http-equiv="content-type" charset="utf-8">
 
 </head>
@@ -17,24 +18,32 @@
     margin: 0 20px;
   }
 
+  #hiragana-quiz {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
   table {
     margin: 20px auto;
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid black;
     border-collapse: collapse;
     width: 70%;
   }
 
-  tr:nth-child(even) {
-    background-color: #CCFFFF;
-  }
-
-  tr:nth-child(odd) {
-    background-color: #99FFFF;
+  tr {
+    background-color: white;
+    color: black;
   }
 
   tr:hover {
     cursor: pointer;
+    background-color: #f5f5f5;
+  }
+
+  .deactive {
+    background-color: white !important;
+    cursor: default !important;
   }
 
   td {
@@ -42,13 +51,16 @@
     height: 50px;
   }
 
-  .question {
-    background-color: #0099FF !important;
+  th {
+    background-color: white !important;
     cursor: default !important;
-    font-family: 'Raleway', sans-serif;
     padding: 15px;
     font-size: 20px;
+    color: #222233;
+    padding: 30px;
+
   }
+
 
   .wrong-answer.wrong {
     background-color: red !important;
@@ -59,20 +71,12 @@
     display: none;
   }
 
-  .next-previous-question {
-    background-color: #333;
-    font-family: 'Raleway', sans-serif;
-    padding: 12px 30px;
-    margin: 10px;
-  }
-
-  .next-previous-question a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
+  .next-question {
+    background-color: #222233 !important;
+    padding: 15px;
     font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 1.3px;
+    font-size: 40px;
+    color: white;
   }
 
   .bold {
@@ -103,13 +107,13 @@
         <ul>
           <li></li>
           <li></li>
-          <li><a href="hiragana.html">Hiragana</a></li>
+          <li><a href="Hiragana.html">Hiragana</a></li>
           <li></li>
         </ul>
         <ul>
           <li></li>
           <li></li>
-          <li><a href="katakana">Katakana</a></li>
+          <li><a href="katakana.html">Katakana</a></li>
           <li></li>
         </ul>
       </div>
@@ -118,6 +122,7 @@
   <main>
     <h1 class="upper-case">hiragana quiz</h1>
     <section class="introduction">
+      <p>In the previous lesson, we have learned about Hiragana. Let's check if you remembered by doing some small quizs.</p>
     </section>
 
     <hr>
@@ -126,30 +131,32 @@
       <div class="hiragana-quiz">
         <table id="quiz">
           <tr>
-            <td class="question bold" colspan="2"></td>
+            <th class="question bold"></th>
           </tr>
           <tr>
-            <td class="answer" id="1st-answer" colspan="2"></td>
+            <td class="answer" id="1st-answer"></td>
           </tr>
           <tr>
-            <td class="answer" id="2nd-answer" colspan="2"></td>
+            <td class="answer" id="2nd-answer"></td>
           </tr>
           <tr>
-            <td class="answer" id="3rd-answer" colspan="2"></td>
+            <td class="answer" id="3rd-answer"></td>
           </tr>
           <tr>
-            <td class="answer" id="4th-answer" colspan="2"></td>
+            <td class="answer" id="4th-answer"></td>
           </tr>
           <tr>
-            <td class="judgment bold" colspan="2"></td>
+            <td class="judgment hide bold"></td>
           </tr>
-          <tr class="next-previous hide">
-            <td class="next-previous-question" style="width:50%"><a href="hiragana-quiz-1.html">Previous question</a></td>
-            <td class="next-previous-question" style="width:50%"><a href="hiragana-quiz-3.html">Next question</a></td>
+          <tr class="next-question hide">
+            <td>&#8635;</td>
           </tr>
         </table>
       </div>
     </section>
+    <a href="hiragana.html" class="next-previous" id="previous">&#10094;</a>
+    <a href="hiragana-quiz-3.html" class="next-previous" id="next">&#10095;</a>
+
   </main>
   <!-- jQuery library -->
   <script src="js/jquery.min.js"></script>
