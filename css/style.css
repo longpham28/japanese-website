@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: white;
+    background-color: #f7f7f7;
     color: #222233;
 }
 
@@ -12,6 +12,10 @@ header {
     margin: 0;
     top: 0px;
     opacity: 0.95;
+}
+
+table {
+    background-color: white;
 }
 
 .nav li {
