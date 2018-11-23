@@ -5,13 +5,13 @@ let romajiList = ["a", "i", "u", "e", "o", "ka", "ki", "ku", "ke", "ko", "sa", "
 
 class quiz {
   constructor() {
-    this.katakana = "";
+    this.hiragana = "";
     this.romaji = "";
   }
 
   getCharacters() {
-    this.katakana = katakanaList[Math.floor(Math.random() * katakanaList.length)];
-    this.romaji = romajiList[katakanaList.indexOf(this.katakana)];
+    this.hiragana = hiraganaList[Math.floor(Math.random() * hiraganaList.length)];
+    this.romaji = romajiList[hiraganaList.indexOf(this.hiragana)];
   }
 };
 
@@ -34,27 +34,24 @@ function getAnswers() {
   wrongAnswer2.getCharacters();
   wrongAnswer3.getCharacters();
 
-  while (1 > 0) {
-    if (correctAnswer == wrongAnswer1 || correctAnswer == wrongAnswer2 || correctAnswer == wrongAnswer3 || wrongAnswer1 == wrongAnswer2 || wrongAnswer1 == wrongAnswer3 || wrongAnswer2 == wrongAnswer3) {
-      wrongAnswer1.getCharacters();
-      wrongAnswer2.getCharacters();
-      wrongAnswer3.getCharacters();
-    } else break;
+  if (correctAnswer == wrongAnswer1 || correctAnswer == wrongAnswer2 || correctAnswer == wrongAnswer3 || wrongAnswer1 == wrongAnswer2 || wrongAnswer1 == wrongAnswer3 || wrongAnswer2 == wrongAnswer3) {
+    wrongAnswer1.getCharacters();
+    wrongAnswer2.getCharacters();
+    wrongAnswer3.getCharacters();
   }
 
   choices = [correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3];
+
 
   firstAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
   secondAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
   thirdAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
   fourthAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
 
-  while (1 > 0) {
-    if (firstAnswer == secondAnswer || firstAnswer == thirdAnswer || firstAnswer == fourthAnswer || secondAnswer == thirdAnswer || secondAnswer == fourthAnswer || thirdAnswer == fourthAnswer) {
-      secondAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
-      thirdAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
-      fourthAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
-    } else break;
+  if (firstAnswer == secondAnswer || firstAnswer == thirdAnswer || firstAnswer == fourthAnswer || secondAnswer == thirdAnswer || secondAnswer == fourthAnswer || thirdAnswer == fourthAnswer) {
+    secondAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
+    thirdAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
+    fourthAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
   }
 }
 
@@ -62,7 +59,7 @@ function getAnswers() {
 $(document).ready(() => {
   const outPut = () => {
     getAnswers();
-    $(".question").html("WHAT IS THE PRONOUNCIATION OF " + correctAnswer.katakana);
+    $(".question").html("WHAT IS THE PRONOUNCIATION OF " + correctAnswer.hiragana);
 
     $("#1st-answer").html(firstAnswer);
     $("#2nd-answer").html(secondAnswer);
