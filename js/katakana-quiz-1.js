@@ -29,24 +29,20 @@ let fourthAnswer = "";
 function getAnswers() {
   let choices = [];
 
-  function answers() {
-    correctAnswer.getCharacters();
-    wrongAnswer1.getCharacters();
-    wrongAnswer2.getCharacters();
-    wrongAnswer3.getCharacters();
+  correctAnswer.getCharacters();
+  wrongAnswer1.getCharacters();
+  wrongAnswer2.getCharacters();
+  wrongAnswer3.getCharacters();
 
-    while (1 > 0) {
-      if (correctAnswer == wrongAnswer1 || correctAnswer == wrongAnswer2 || correctAnswer == wrongAnswer3 || wrongAnswer1 == wrongAnswer2 || wrongAnswer1 == wrongAnswer3 || wrongAnswer2 == wrongAnswer3) {
-        wrongAnswer1.getCharacters();
-        wrongAnswer2.getCharacters();
-        wrongAnswer3.getCharacters();
-      } else break;
-    }
-
-    choices = [correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3];
+  while (1 > 0) {
+    if (correctAnswer == wrongAnswer1 || correctAnswer == wrongAnswer2 || correctAnswer == wrongAnswer3 || wrongAnswer1 == wrongAnswer2 || wrongAnswer1 == wrongAnswer3 || wrongAnswer2 == wrongAnswer3) {
+      wrongAnswer1.getCharacters();
+      wrongAnswer2.getCharacters();
+      wrongAnswer3.getCharacters();
+    } else break;
   }
 
-  answers();
+  choices = [correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3];
 
   firstAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
   secondAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
