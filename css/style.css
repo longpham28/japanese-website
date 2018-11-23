@@ -1,155 +1,140 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f7f7f7;
-    color: #222233;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7f7f7;
+  color: #222233;
+  width: 100%;
 }
 
 header {
-    background-color: #232323;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    margin: 0;
-    top: 0px;
-    opacity: 0.9;
-    height: 100px;
-    left: 0px;
+  background-color: #232323;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  margin: 0;
+  opacity: 0.9;
+  height: 80px;
+  left: 0px;
+  align-items: center;
+  display: flex;
+  top: 0px;
+}
+
+.logo {
+  font-family: "Great Vibes", cursive;
+  color: white;
+  position: absolute;
+  left: 1em;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+.logo:hover {
+  font-weight: bold;
 }
 
 table {
-    background-color: white;
-}
-
-.nav li {
-    display: inline-block;
-    width: 130px;
-    text-align: center;
-    position: relative;
-    right: 40px;
-}
-
-.nav li:hover {
-    font-weight: bold;
-}
-
-.nav {
-    margin: 0;
-    padding: 20px 0;
-
-}
-
-#sub-nav {
-    padding: 0 0 20px 0;
-}
-
-#sub-nav li {
-    height: 22px;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none
+  background-color: white;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .side-nav {
-    position: fixed;
-    top: 100px;
-    left: 0;
-    background-color: #232323;
-    height: 100%;
-    width: 8em;
-    opacity: 0.9;
-    display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background-color: #232323;
+  height: 100%;
+  width: 8em;
+  opacity: 0.9;
+  display: none;
 }
 
 .open-button {
-    position: fixed;
-    top: 100px;
-    left: 0;
-    height: 100%;
-    width: 2em;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  height: 100%;
+  width: 2em;
 }
 
 .open-button a {
-    position: relative;
-    top: 50%;
-    padding-left: 10px;
-    font-size: 20px;
-    width: 2em;
+  position: relative;
+  top: 50%;
+  padding-left: 10px;
+  font-size: 20px;
+  width: 2em;
 }
 
 .open-button:hover {
-    background-color: gray;
+  background-color: gray;
+  color: white;
 }
 
 .open-button.disable {
-    display: none;
+  display: none;
 }
 
 .side-nav a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 20px 10px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 20px 10px;
 }
 
 .side-nav .close-button {
-    margin-left: 6.5em;
-    padding: 0px 0px;
+  margin-left: 6.5em;
+  padding: 0px 0px;
 }
 
-
 main.go-right {
-    margin-left: 8em;
+  margin-left: 8em;
 }
 
 main {
-    position: relative;
-    top: 100px;
-    margin-left: 2em;
-
+  position: relative;
+  top: 100px;
+  margin-left: 2em;
 }
 
 .next-previous {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 1.3px;
-    padding: 12px 30px;
-    margin: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 1px solid white;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #222233;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 12px 30px;
+  margin: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #222233;
 }
 
 .next-previous:hover {
-    background-color: #999999;
+  background-color: #999999;
 }
 
 #next {
-    float: right;
+  float: right;
 }
 
 #previous {
-    float: left;
+  float: left;
 }
 
 .upper-case {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .red-text {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }

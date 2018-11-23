@@ -17,11 +17,14 @@ $(document).ready(() => {
       speakChar(val);
       writeChar(val);
       deactiveImage(val);
+
     });
   });
 
-  $('.popup-image').on('click', function () {
-    $('.popup-image').removeClass("active");
+  $(document).on('click', (event) => {
+    if ($(event.target).prop("tagName") != "TD") {
+      $('.popup-image').removeClass("active");
+    }
   });
 
 });

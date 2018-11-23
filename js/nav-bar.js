@@ -1,8 +1,13 @@
 $(document).ready(() => {
-  $("#nav-bar-1").on('mouseenter', function () {
-    $("#sub-nav").slideDown('fast');
+  $(".open-button").on('click', () => {
+    $(".side-nav").show();
+    $("main").addClass('go-right');
+    $(".open-button").hide();
   });
-  $("header").on('mouseleave', function () {
-    $("#sub-nav").slideUp('normal');
+
+  $(".close-button").on('click', () => {
+    $(".side-nav").hide();
+    $("main").removeClass('go-right');
+    $(".open-button").show();
   });
-});
+})
