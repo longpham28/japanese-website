@@ -5,19 +5,19 @@ let romajiList = ["a", "i", "u", "e", "o", "ka", "ki", "ku", "ke", "ko", "sa", "
 
 class quiz {
   constructor() {
-    this.hiragana = "";
+    this.katakana = "";
     this.romaji = "";
   }
 
   getCharacters() {
-    this.hiragana = hiraganaList[Math.floor(Math.random() * hiraganaList.length)];
-    this.romaji = romajiList[hiraganaList.indexOf(this.hiragana)];
+    this.katakana = katakanaList[Math.floor(Math.random() * katakanaList.length)];
+    this.romaji = romajiList[katakanaList.indexOf(this.katakana)];
   }
 };
 
 const getAnswers = (answer) => {
   answer.getCharacters();
-  hiraganaList.splice(hiraganaList.indexOf(answer.hiragana), 1);
+  katakanaList.splice(katakanaList.indexOf(answer.katakana), 1);
   romajiList.splice(romajiList.indexOf(answer.romaji), 1);
 }
 
@@ -46,7 +46,7 @@ function getRandomAnswers() {
 $(document).ready(() => {
   const outPut = () => {
     getRandomAnswers();
-    $(".question").html("WHAT IS THE PRONOUNCIATION OF " + correctAnswer.hiragana);
+    $(".question").html("WHAT IS THE PRONOUNCIATION OF " + correctAnswer.katakana);
     $("#1st-answer").html(choices[0]);
     $("#2nd-answer").html(choices[1]);
     $("#3rd-answer").html(choices[2]);
