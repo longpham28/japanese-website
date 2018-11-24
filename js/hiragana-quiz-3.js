@@ -51,103 +51,33 @@ $(document).ready(() => {
     $("#3rd-answer").html(choices[2]);
     $("#4th-answer").html(choices[3]);
 
-    if (choices[0] == correctAnswer.hiragana) {
-      $("#1st-answer").on('click', () => {
-        $(".answer").addClass("deactive");
-        $(".answer").off('click');
-        $(".answer").not("#1st-answer").html("");
-        $(".judgment").css({
-          "background-color": "#222233",
-          "color": "white "
+    $('.answer').each((index, element) => {
+      if ($(element).text() === correctAnswer.hiragana) {
+        $(element).on('click', () => {
+          $(".answer").addClass("deactive");
+          $(".answer").off('click');
+          $(".answer").not($(element)).html("");
+          $(".judgment").css({
+            "background-color": "#222233",
+            "color": "white "
+          })
+          $(".judgment").html("CORRECT ANSWER!");
+          $(".judgment").show();
+          $(".next-question").fadeIn();
         })
-        $(".judgment").html("CORRECT ANSWER!");
-        $(".judgment").show();
-        $(".next-question").fadeIn();
-      });
-      $(".answer").not("#1st-answer").on('click', (event) => {
-        $(event.currentTarget).html("");
-        $(".judgment").css({
-          "color": "white",
-          "background-color": "red"
-        });
-        $(".judgment").html("WRONG ANSWER!");
-        $(".judgment").show();
-      })
-    }
-
-    if (choices[1] == correctAnswer.hiragana) {
-      $("#2nd-answer").on('click', () => {
-        $(".answer").addClass("deactive");
-        $(".answer").off('click');
-        $(".answer").not("#2nd-answer").html("");
-        $(".judgment").css({
-          "background-color": "#222233",
-          "color": "white "
+      } else {
+        $(element).on('click', () => {
+          $(element).html("");
+          $(".judgment").css({
+            "color": "white",
+            "background-color": "red"
+          });
+          $(".judgment").html("WRONG ANSWER!");
+          $(".judgment").show();
         })
-        $(".judgment").html("CORRECT ANSWER!");
-        $(".judgment").show();
-        $(".next-question").fadeIn();
-      });
-      $(".answer").not("#2nd-answer").on('click', (event) => {
-        $(event.currentTarget).html("");
-        $(".judgment").css({
-          "color": "white",
-          "background-color": "red"
-        });
-        $(".judgment").html("WRONG ANSWER!");
-        $(".judgment").show();
-      });
-
-    }
-    if (choices[2] == correctAnswer.hiragana) {
-      $("#3rd-answer").on('click', () => {
-        $(".answer").addClass("deactive");
-        $(".answer").off('click');
-        $(".answer").not("#3rd-answer").html("");
-        $(".judgment").css({
-          "background-color": "#222233",
-          "color": "white "
-        })
-        $(".judgment").html("CORRECT ANSWER!");
-        $(".judgment").show();
-        $(".next-question").fadeIn();
-      });
-      $(".answer").not("#3rd-answer").on('click', (event) => {
-        $(event.currentTarget).html("");
-        $(".judgment").css({
-          "color": "white",
-          "background-color": "red"
-        });
-        $(".judgment").html("WRONG ANSWER!");
-        $(".judgment").show();
-      });
-    }
-
-    if (choices[3] == correctAnswer.hiragana) {
-      $("#4th-answer").on('click', () => {
-        $(".answer").addClass("deactive");
-        $(".answer").off('click');
-        $(".answer").not("#4th-answer").html("");
-        $(".judgment").css({
-          "background-color": "#222233",
-          "color": "white "
-        })
-        $(".judgment").html("CORRECT ANSWER!");
-        $(".judgment").show();
-        $(".next-question").fadeIn();
-      });
-      $(".answer").not("#4th-answer").on('click', (event) => {
-        $(event.currentTarget).html("");
-        $(".judgment").css({
-          "color": "white",
-          "background-color": "red"
-        });
-        $(".judgment").html("WRONG ANSWER!");
-        $(".judgment").show();
-      });
-    }
+      }
+    })
   }
-
   outPut();
 
   $(".next-question").on('click', () => {
