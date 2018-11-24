@@ -14,65 +14,44 @@ class quiz {
   }
 };
 
+const getAnswers = (answer) => {
+  answer.getCharacters();
+  katakanaList.splice(katakanaList.indexOf(answer.katakana), 1);
+  romajiList.splice(romajiList.indexOf(answer.romaji), 1);
+}
+
 let correctAnswer = new quiz();
 let wrongAnswer1 = new quiz();
 let wrongAnswer2 = new quiz();
 let wrongAnswer3 = new quiz();
 
-let firstAnswer = "";
-let secondAnswer = "";
-let thirdAnswer = "";
-let fourthAnswer = "";
+getAnswers(correctAnswer);
+getAnswers(wrongAnswer1);
+getAnswers(wrongAnswer2);
+getAnswers(wrongAnswer3);
 
+let choices = [];
 
-function getAnswers() {
-  let choices = [];
+choices = [correctAnswer.romaji, wrongAnswer1.romaji, wrongAnswer2.romaji, wrongAnswer3.romaji];
 
-  function answers() {
-    correctAnswer.getCharacters();
-    wrongAnswer1.getCharacters();
-    wrongAnswer2.getCharacters();
-    wrongAnswer3.getCharacters();
-
-    while (1 > 0) {
-      if (correctAnswer == wrongAnswer1 || correctAnswer == wrongAnswer2 || correctAnswer == wrongAnswer3 || wrongAnswer1 == wrongAnswer2 || wrongAnswer1 == wrongAnswer3 || wrongAnswer2 == wrongAnswer3) {
-        wrongAnswer1.getCharacters();
-        wrongAnswer2.getCharacters();
-        wrongAnswer3.getCharacters();
-      } else break;
-    }
-
-    choices = [correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3];
+function getRandomAnswers() {
+  for (let i = choices.length - 1; i >= 0; i--) {
+    let rand = Math.floor(Math.random() * (i + 1));
+    [choices[i], choices[rand]] = [choices[rand], choices[i]]
   }
 
-  answers();
-
-  firstAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
-  secondAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
-  thirdAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
-  fourthAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
-
-  while (1 > 0) {
-    if (firstAnswer == secondAnswer || firstAnswer == thirdAnswer || firstAnswer == fourthAnswer || secondAnswer == thirdAnswer || secondAnswer == fourthAnswer || thirdAnswer == fourthAnswer) {
-      secondAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
-      thirdAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
-      fourthAnswer = choices[Math.floor(Math.random() * choices.length)].romaji;
-    } else break;
-  }
 }
-
 
 $(document).ready(() => {
   const outPut = () => {
-    getAnswers();
+    getRandomAnswers();
     $(".question").html("WHAT IS THE PRONOUNCIATION OF " + correctAnswer.katakana);
+    $("#1st-answer").html(choices[0]);
+    $("#2nd-answer").html(choices[1]);
+    $("#3rd-answer").html(choices[2]);
+    $("#4th-answer").html(choices[3]);
 
-    $("#1st-answer").html(firstAnswer);
-    $("#2nd-answer").html(secondAnswer);
-    $("#3rd-answer").html(thirdAnswer);
-    $("#4th-answer").html(fourthAnswer);
-
-    if (firstAnswer == correctAnswer.romaji) {
+    if (choices[0] == correctAnswer.romaji) {
       $("#1st-answer").on('click', () => {
         $(".answer").addClass("deactive");
         $(".answer").off('click');
@@ -96,7 +75,7 @@ $(document).ready(() => {
       })
     }
 
-    if (secondAnswer == correctAnswer.romaji) {
+    if (choices[1] == correctAnswer.romaji) {
       $("#2nd-answer").on('click', () => {
         $(".answer").addClass("deactive");
         $(".answer").off('click');
@@ -120,7 +99,7 @@ $(document).ready(() => {
       });
 
     }
-    if (thirdAnswer == correctAnswer.romaji) {
+    if (choices[2] == correctAnswer.romaji) {
       $("#3rd-answer").on('click', () => {
         $(".answer").addClass("deactive");
         $(".answer").off('click');
@@ -144,7 +123,7 @@ $(document).ready(() => {
       });
     }
 
-    if (fourthAnswer == correctAnswer.romaji) {
+    if (choices[3] == correctAnswer.romaji) {
       $("#4th-answer").on('click', () => {
         $(".answer").addClass("deactive");
         $(".answer").off('click');
