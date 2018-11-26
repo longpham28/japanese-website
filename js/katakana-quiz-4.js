@@ -13,29 +13,6 @@ class quiz {
   }
 };
 
-let correctAnswer = new quiz();
-let wrongAnswer1 = new quiz();
-let wrongAnswer2 = new quiz();
-let wrongAnswer3 = new quiz();
-
-let firstAnswer = "";
-let secondAnswer = "";
-let thirdAnswer = "";
-let fourthAnswer = "";
-
-
-class quiz {
-  constructor() {
-    this.katakana = "";
-    this.romaji = "";
-  }
-
-  getCharacters() {
-    this.katakana = katakanaList[Math.floor(Math.random() * katakanaList.length)];
-    this.romaji = romajiList[katakanaList.indexOf(this.katakana)];
-  }
-};
-
 const getAnswers = (answer) => {
   answer.getCharacters();
   katakanaList.splice(katakanaList.indexOf(answer.katakana), 1);
