@@ -19,11 +19,21 @@
 
     .background h1 {
         font-weight: 200;
-        font-size: 50px;
-        margin-top: 0px;
-        padding-top: 80px;
+        margin-top: 80px;
         margin-bottom: 80px;
         text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 900px) {
+        .background h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        .background h1 {
+            font-size: 50px;
+        }
     }
 
     #japan-flag {
