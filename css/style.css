@@ -148,3 +148,9 @@ main {
   color: red;
   font-weight: bold;
 }
+
+hr {
+  border: 0;
+  height: 0.5px;
+  background-color: #D32F2F;
+}
