@@ -6,6 +6,7 @@ hr {
   height: 1px;
   background-color: #D32F2F;
   border: 0;
+  margin: 30px auto;
 }
 
 body {
@@ -32,7 +33,15 @@ header {
 
 h1 {
   color: #212121;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 
 .logo {
   font-family: "Great Vibes", cursive;
