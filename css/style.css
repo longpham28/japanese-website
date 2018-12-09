@@ -1,27 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  height: 1px;
+  background-color: #D32F2F;
+  border: 0;
+  margin: 30px auto;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f7f7f7;
+  background-color: white;
   color: #222233;
-  width: 100%;
+  width: 97vw;
+  line-height: 150%;
 }
 
 header {
-  background-color: #232323;
+  background-color: #D32F2F;
   position: fixed;
   width: 100%;
   z-index: 10;
   margin: 0;
   opacity: 0.9;
-  height: 80px;
+  height: 10vh;
   left: 0px;
   align-items: center;
   display: flex;
   top: 0px;
 }
 
+h1 {
+  color: #212121;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
 .logo {
   font-family: "Great Vibes", cursive;
-  color: white;
+  color: #FFFFFF;
   position: absolute;
   left: 1em;
   font-size: 30px;
@@ -43,9 +67,9 @@ table {
 
 .side-nav {
   position: fixed;
-  top: 80px;
+  top: 10vh;
   left: 0;
-  background-color: #232323;
+  background-color: #D32F2F;
   height: 100%;
   width: 8em;
   opacity: 0.9;
@@ -54,13 +78,14 @@ table {
 
 .open-button {
   position: fixed;
-  top: 80px;
+  top: 10vh;
   left: 0;
   height: 100%;
-  width: 2em;
+  width: 1.5em;
 }
 
 .open-button a {
+  color: #FFC107;
   position: relative;
   top: 50%;
   padding-left: 10px;
@@ -69,8 +94,13 @@ table {
 }
 
 .open-button:hover {
-  background-color: gray;
-  color: white;
+  background-color: #D32F2F;
+  color: #FFFFFF;
+}
+
+.open-button:hover a {
+  color: #FFFFFF;
+
 }
 
 .open-button.disable {
@@ -100,10 +130,8 @@ main {
 }
 
 .next-previous {
-  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  letter-spacing: 1.3px;
   padding: 12px 30px;
   margin: 10px;
   text-decoration: none;
@@ -111,11 +139,8 @@ main {
   border: 1px solid white;
   border-radius: 5px;
   text-decoration: none;
-  color: #222233;
-}
-
-.next-previous:hover {
-  background-color: #999999;
+  background-color: #FFC107;
+  color: #FFFFFF;
 }
 
 #next {
@@ -137,4 +162,10 @@ main {
 .red-text {
   color: red;
   font-weight: bold;
+}
+
+hr {
+  border: 0;
+  height: 0.5px;
+  background-color: #D32F2F;
 }

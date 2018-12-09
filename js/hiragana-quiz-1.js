@@ -58,8 +58,8 @@ $(document).ready(() => {
           $(".answer").off('click');
           $(".answer").not($(element)).html("");
           $(".judgment").css({
-            "background-color": "#222233",
-            "color": "white "
+            "background-color": "#D32F2F",
+            "color": "#FFFFFF "
           })
           $(".judgment").html("CORRECT ANSWER!");
           $(".judgment").show();
@@ -69,8 +69,8 @@ $(document).ready(() => {
         $(element).on('click', () => {
           $(element).html("");
           $(".judgment").css({
-            "color": "white",
-            "background-color": "red"
+            "color": "#FFFFFF",
+            "background-color": "#FFC107"
           });
           $(".judgment").html("WRONG ANSWER!");
           $(".judgment").show();
