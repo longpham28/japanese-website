@@ -1,0 +1,829 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+  <title>Number and Time</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <meta http-equiv="content-type" charset="utf-8">
+</head>
+
+<style>
+  section {
+    margin: 30px 20px;
+    text-align: center;
+  }
+
+  .time-in-japanese {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .number,
+  .time,
+  .month-and-day,
+  .day-of-a-week {
+    border: 0.5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .number {
+    margin-bottom: 50px;
+  }
+
+
+  .number-and-time {
+    grid-column: 1/2;
+  }
+
+  .month-week-day {
+    grid-column: 2/3;
+  }
+
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 70%;
+    color: black;
+    border-radius: 10px;
+    margin: 20px auto;
+
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    padding: 7px;
+    width: 25%;
+  }
+
+  th {
+    background-color: white !important;
+  }
+
+
+  td:hover {
+    cursor: pointer;
+  }
+
+  tr:hover {
+    background-color: #efefef;
+  }
+</style>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">Learn Japannese</a>
+  </header>
+  <div class="side-nav">
+    <a href="#" class="close-button">&times;</a>
+    <a href="alphabet.html">Alphabet</a>
+    <a href="hiragana.html">Hiragana</a>
+    <a href="katakana.html">Katakana</a>
+    <a href="vocabulary.html">Vocabulary</a>
+    <a href="phrases.html">Phrases</a>
+    <a href="numbers-and-time.html" style="font-weight:bold; font-size:20px;">Numbers and time</a>
+  </div>
+  <div class="open-button">
+    <a>&#10095;</a>
+  </div>
+
+  <main>
+    <section class="intro">
+      <h1 class="upper-case">Numbers and Time</h1>
+      <p>In this lesson, we will learn how to say numbers and time in japanese.</p>
+    </section>
+
+    <div class="time-in-japanese">
+      <div class="number-and-time">
+        <section class="number">
+          <h2 class="upper-case">Number</h2>
+
+          <div class="number-table">
+            <table id="number-table">
+              <tr>
+                <th scope="col">
+                  漢字
+                  <br>
+                  Kanji
+                </th>
+                <th scope="col">
+                  ひらがな
+                  <br>
+                  Hiragana
+                </th>
+                <th scope="col">
+                  ローマ字
+                  <br>
+                  Romaji
+                </th>
+                <th scope="col">
+                  English Meaning
+                </th>
+              </tr>
+
+              <tr id="1">
+                <td>一</td>
+                <td>いち</td>
+                <td>ichi</td>
+                <td>One</td>
+                <audio id="1-audio" src="audio/number/1.m4a"></audio>
+              </tr>
+
+              <tr id="2">
+                <td>二</td>
+                <td>に</td>
+                <td>ni</td>
+                <td>Two</td>
+                <audio id="2-audio" src="audio/phrases/2.m4a"></audio>
+              </tr>
+
+              <tr id="3">
+                <td>三</td>
+                <td>さん</td>
+                <td>san</td>
+                <td>Three</td>
+                <audio id="3-audio" src="audio/phrases/3.m4a"></audio>
+
+              </tr>
+
+              <tr id="4">
+                <td>四</td>
+                <td>よん</td>
+                <td>yon</td>
+                <td>Four</td>
+                <audio id="4-audio" src="audio/phrases/4.m4a"></audio>
+              </tr>
+
+              <tr id="5">
+                <td>五</td>
+                <td>ご</td>
+                <td>go</td>
+                <td>Five</td>
+                <audio id="5-audio" src="audio/phrases/5.m4a"></audio>
+              </tr>
+
+              <tr id="6">
+                <td>六</td>
+                <td>ろく</td>
+                <td>roku</td>
+                <td>Six</td>
+                <audio id="6-audio" src="audio/phrases/6.m4a"></audio>
+              </tr>
+
+              <tr id="7">
+                <td>七</td>
+                <td>なな</td>
+                <td>nana</td>
+                <td>Seven</td>
+                <audio id="7-audio" src="audio/phrases/7.m4a"></audio>
+              </tr>
+
+              <tr id="8">
+                <td>八</td>
+                <td>はち</td>
+                <td>hachi</td>
+                <td>Eight</td>
+                <audio id="8-audio" src="audio/phrases/8.m4a"></audio>
+              </tr>
+
+              <tr id="9">
+                <td>九</td>
+                <td>きゅう</td>
+                <td>kyuu</td>
+                <td>Nine</td>
+                <audio id="9-audio" src="audio/phrases/9.m4a"></audio>
+              </tr>
+
+              <tr id="10">
+                <td>十</td>
+                <td>じゅう</td>
+                <td>juuu</td>
+                <td>Ten</td>
+                <audio id="10-audio" src="audio/phrases/10.m4a"></audio>
+              </tr>
+
+              <tr id="11">
+                <td>十一</td>
+                <td>じゅういち</td>
+                <td>juuichi</td>
+                <td>Eleven</td>
+                <audio id="11-audio" src="audio/phrases/11.m4a"></audio>
+              </tr>
+
+              <tr id="20">
+                <td>二十</td>
+                <td>にじゅう</td>
+                <td>nijuu</td>
+                <td>Twenty</td>
+                <audio id="20-audio" src="audio/phrases/20.m4a"></audio>
+              </tr>
+
+              <tr id="100">
+                <td>百</td>
+                <td>ひゃく</td>
+                <td>hyaku</td>
+                <td>Hundred</td>
+                <audio id="100-audio" src="audio/phrases/100.m4a"></audio>
+              </tr>
+
+              <tr id="1000">
+                <td>千</td>
+                <td>せん</td>
+                <td>sen</td>
+                <td>Thoundsand</td>
+                <audio id="1000-audio" src="audio/phrases/1000.m4a"></audio>
+              </tr>
+
+              <tr id="10000">
+                <td>万</td>
+                <td>まん</td>
+                <td>man</td>
+                <td>Ten Thousand</td>
+                <audio id="10000-audio" src="audio/phrases/10000.m4a"></audio>
+              </tr>
+
+              <tr id="100000000">
+                <td>億</td>
+                <td>おく</td>
+                <td>oku</td>
+                <td>One Hundred Milion</td>
+                <audio id="100000000-audio" src="audio/phrases/100000000.m4a"></audio>
+              </tr>
+
+            </table>
+          </div>
+          <p>It is simple to say numbers in Japanese if you know 1 through 10. For example, 11 is simply 10 and 1 after it (十一), 32 is simply 30 and 2 after it（三十）, etc... </p>
+        </section>
+
+
+        <section class="time">
+          <h2 class="upper-case">Time</h2>
+          <p>In Japanease, 時（じ）means hour and 分（ふん/ぶん/ぷん）means minute. Just put numbers before them and you can say time</p>
+          <div class="time-table">
+            <table id="time-table">
+              <tr>
+                <th scope="col">
+                  漢字
+                  <br>
+                  Kanji
+                </th>
+                <th scope="col">
+                  ひらがな
+                  <br>
+                  Hiragana
+                </th>
+                <th scope="col">
+                  ローマ字
+                  <br>
+                  Romaji
+                </th>
+                <th scope="col">
+                  English Meaning
+                </th>
+              </tr>
+
+              <tr id="ji">
+                <td>時</td>
+                <td>じ</td>
+                <td>ji</td>
+                <td>Hour</td>
+                <audio id="-audio" src="audio/time/.m4a"></audio>
+              </tr>
+
+              <tr id="fun">
+                <td>分</td>
+                <td>ふん/ぶん/ぷん</td>
+                <td>fun/bun/pun</td>
+                <td>Minute</td>
+                <audio id="fun-audio" src="audio/time/fun.m4a"></audio>
+              </tr>
+
+              <tr id="ichiji">
+                <td>一時</td>
+                <td>いちじ</td>
+                <td>ichiji</td>
+                <td>One o'clock</td>
+                <audio id="ichiji-audio" src="audio/time/ichiji.m4a"></audio>
+              </tr>
+
+              <tr id="niji">
+                <td>二時</td>
+                <td>にじ</td>
+                <td>niji</td>
+                <td>Two o'clock</td>
+                <audio id="niji-audio" src="audio/time/niji.m4a"></audio>
+              </tr>
+
+              <tr id="nijihan">
+                <td>二時半</td>
+                <td>にじはん</td>
+                <td>nijihan</td>
+                <td>Half past two</td>
+                <audio id="nijihan-audio" src="audio/time/nijihan.m4a"></audio>
+              </tr>
+
+              <tr id="yoji">
+                <td>四時</td>
+                <td><span class="red-text">よ</span>じ</td>
+                <td><span class="red-text">yo</span>ji</td>
+                <td>Four o'clock</td>
+                <audio id="yoji-audio" src="audio/time/yoji.m4a"></audio>
+              </tr>
+
+              <tr id="shichiji">
+                <td>七時</td>
+                <td><span class="red-text">しち</span>じ</td>
+                <td><span class="red-text">shichi</span>ji</td>
+                <td>Seven o'clock</td>
+                <audio id="shichiji-audio" src="audio/time/shichiji.m4a"></audio>
+              </tr>
+
+              <tr id="kuji">
+                <td>九時</td>
+                <td><span class="red-text">く</span>じ</td>
+                <td><span class="red-text">ku</span>ji</td>
+                <td>Nine o'clock</td>
+                <audio id="kuji-audio" src="audio/time/kuji.m4a"></audio>
+              </tr>
+
+              <tr id="ippun">
+                <td>一分</td>
+                <td><span class="red-text">いっ</span>ぷん</td>
+                <td>ippun</td>
+                <td>One minute</td>
+                <audio id="ippun-audio" src="audio/time/ippun.m4a"></audio>
+              </tr>
+
+              <tr id="nifun">
+                <td>二分</td>
+                <td>にふん</td>
+                <td>nifun</td>
+                <td>Two minutes</td>
+                <audio id="nifun-audio" src="audio/time/nifun.m4a"></audio>
+              </tr>
+
+
+              <tr id="sanpun">
+                <td>三分</td>
+                <td>さんぷん</td>
+                <td>sanpun</td>
+                <td>Three minutes</td>
+                <audio id="sanpun-audio" src="audio/time/sanpun.m4a"></audio>
+              </tr>
+
+              <tr id="yonfun">
+                <td>四分</td>
+                <td>よんふん</td>
+                <td>yonfun</td>
+                <td>Four minutes</td>
+                <audio id="yonfun-audio" src="audio/time/yonfun.m4a"></audio>
+              </tr>
+
+              <tr id="gofun">
+                <td>五分</td>
+                <td>ごふん</td>
+                <td>gofun</td>
+                <td>Five minutes</td>
+                <audio id="gofun-audio" src="audio/time/gofun.m4a"></audio>
+              </tr>
+
+              <tr id="roppun">
+                <td>六分</td>
+                <td><span class="red-text">ろっ</span>ぷん</td>
+                <td><span class="red-text">rop</span>pun</td>
+                <td>Six minutes</td>
+                <audio id="roppun-audio" src="audio/time/roppun.m4a"></audio>
+              </tr>
+
+              <tr id="nanafun">
+                <td>七分</td>
+                <td>ななふん</td>
+                <td>nanafun</td>
+                <td>Seven minutes</td>
+                <audio id="nanafun-audio" src="audio/time/nanafun.m4a"></audio>
+              </tr>
+
+              <tr id="happun">
+                <td>八分</td>
+                <td><span class="red-text">はっ</span>ぷん</td>
+                <td><span class="red-text">hap</span>pun</td>
+                <td>Eight minutes</td>
+                <audio id="happun-audio" src="audio/time/happun.m4a"></audio>
+              </tr>
+
+              <tr id="kyuufun">
+                <td>九分</td>
+                <td>きゅうふん</td>
+                <td>kyuufun</td>
+                <td>Nine minutes</td>
+                <audio id="kyuufun-audio" src="audio/time/kyuufun.m4a"></audio>
+              </tr>
+
+              <tr id="juppun">
+                <td>十分</td>
+                <td><span class="red-text">じゅっ</span>ぷん</td>
+                <td><span class="red-text">jup</span>pun</td>
+                <td>Ten minutes</td>
+                <audio id="juppun-audio" src="audio/time/juppun.m4a"></audio>
+              </tr>
+
+            </table>
+          </div>
+        </section>
+      </div>
+      <div class="month-week-day">
+        <section class="month-and-day">
+          <h2 class="upper-case">Month and Day</h2>
+          <div class="month-day-table">
+            <table id="month-day-table">
+              <tr>
+                <th scope="col">
+                  漢字
+                  <br>
+                  Kanji
+                </th>
+                <th scope="col">
+                  ひらがな
+                  <br>
+                  Hiragana
+                </th>
+                <th scope="col">
+                  ローマ字
+                  <br>
+                  Romaji
+                </th>
+                <th scope="col">
+                  English Meaning
+                </th>
+              </tr>
+
+              <tr id="ichigatsu">
+                <td>一月</td>
+                <td>いちがつ</td>
+                <td>ichigatsu</td>
+                <td>January</td>
+                <audio id="ichigatsu-audio" src="audio/month-day/ichigatsu.m4a"></audio>
+              </tr>
+
+              <tr id="nigatsu">
+                <td>二月</td>
+                <td>にがつ</td>
+                <td>nigatsu</td>
+                <td>February</td>
+                <audio id="nigatsu-audio" src="audio/month-day/nigatsu.m4a"></audio>
+              </tr>
+
+              <tr id="sangatsu">
+                <td>三月</td>
+                <td>さんがつ</td>
+                <td>sangatsu</td>
+                <td>March</td>
+                <audio id="sangatsu-audio" src="audio/month-day/sangatsu.m4a"></audio>
+              </tr>
+
+              <tr id="shigatsu">
+                <td>四月</td>
+                <td><span class="red-text">し</span>がつ</td>
+                <td><span class="red-text">shi</span>gatsu</td>
+                <td>April</td>
+                <audio id="shigatsu-audio" src="audio/month-day/.m4a"></audio>
+              </tr>
+
+              <tr id="gogatsu">
+                <td>五月</td>
+                <td>ごがつ</td>
+                <td>gogatsu</td>
+                <td>May</td>
+                <audio id="gogatsu-audio" src="audio/month-day/gogatsu.m4a"></audio>
+              </tr>
+
+              <tr id="rokugatsu">
+                <td>六月</td>
+                <td>ろくがつ</td>
+                <td>rokugatsu</td>
+                <td>June</td>
+                <audio id="rokugatsu-audio" src="audio/month-day/rokugatsu.m4a"></audio>
+              </tr>
+
+              <tr id="shichigatsu">
+                <td>七月</td>
+                <td><span class="red-text">しち</span>がつ</td>
+                <td><span class="red-text">shichi</span>gatsu</td>
+                <td>July</td>
+                <audio id="shichigatsu-audio" src="audio/month-day/shichigatsu.m4a"></audio>
+              </tr>
+
+              <tr id="hachigatsu">
+                <td>八月</td>
+                <td>はちがつ</td>
+                <td>hachigatsu</td>
+                <td>August</td>
+                <audio id="hachigatsu-audio" src="audio/month-day/hachigatsu.m4a"></audio>
+              </tr>
+
+              <tr id="kugatsu">
+                <td>九月</td>
+                <td><span class="red-text">く</span>がつ</td>
+                <td><span class="red-text">ku</span>gatsu</td>
+                <td>September</td>
+                <audio id="kugatsu-audio" src="audio/month-day/kugatsu.m4a"></audio>
+              </tr>
+
+              <tr id="juugatsu">
+                <td>十月</td>
+                <td>じゅうがつ</td>
+                <td>juugatsu</td>
+                <td>October</td>
+                <audio id="juugatsu-audio" src="audio/month-day/juugatsu.m4a"></audio>
+              </tr>
+
+              <tr id="juuichigatsu">
+                <td>十一月</td>
+                <td>じゅういちがつ</td>
+                <td>juuichigatsu</td>
+                <td>November</td>
+                <audio id="juuichigatsu-audio" src="audio/month-day/juuichigatsu.m4a"></audio>
+              </tr>
+
+              <tr id="juunigatsu">
+                <td>十二月</td>
+                <td>じゅうにがつ</td>
+                <td>juunigatsu</td>
+                <td>December</td>
+                <audio id="juunigatsu-audio" src="audio/month-day/juunigatsu.m4a"></audio>
+              </tr>
+
+              <tr id="tsuitachi">
+                <td>一日</td>
+                <td>ついたち</td>
+                <td>tsuitachi</td>
+                <td>1st day of Month</td>
+                <audio id="tsuitachi-audio" src="audio/month-day/tsuitachi.m4a"></audio>
+              </tr>
+
+              <tr id="futsuka">
+                <td>二日</td>
+                <td>ふつか</td>
+                <td>futsuka</td>
+                <td>2nd day of Month</td>
+                <audio id="futsuka-audio" src="audio/month-day/futsuka.m4a"></audio>
+              </tr>
+
+              <tr id="mikka">
+                <td>三日</td>
+                <td>みっか</td>
+                <td>mikka</td>
+                <td>3rd day of Month</td>
+                <audio id="mikka-audio" src="audio/month-day/mikka.m4a"></audio>
+              </tr>
+
+              <tr id="yokka">
+                <td>四日</td>
+                <td>よっか</td>
+                <td>yokka</td>
+                <td>4th day of Month</td>
+                <audio id="yokka-audio" src="audio/month-day/yokka.m4a"></audio>
+              </tr>
+
+              <tr id="itsuka">
+                <td>五日</td>
+                <td>いつか</td>
+                <td>itsuka</td>
+                <td>5th day of Month</td>
+                <audio id="itsuka-audio" src="audio/month-day/itsuka.m4a"></audio>
+              </tr>
+
+              <tr id="muika">
+                <td>六日</td>
+                <td>むいか</td>
+                <td>muika</td>
+                <td>6th day of Month</td>
+                <audio id="muika-audio" src="audio/month-day/muika.m4a"></audio>
+              </tr>
+
+              <tr id="nanoka">
+                <td>七日</td>
+                <td>なのか</td>
+                <td>nanoka</td>
+                <td>7th day of Month</td>
+                <audio id="nanoka-audio" src="audio/month-day/nanoka.m4a"></audio>
+              </tr>
+
+              <tr id="youka">
+                <td>八日</td>
+                <td>ようか</td>
+                <td>youka</td>
+                <td>8th day of Month</td>
+                <audio id="youka-audio" src="audio/month-day/youka.m4a"></audio>
+              </tr>
+
+              <tr id="kokonoka">
+                <td>九日</td>
+                <td>ここのか</td>
+                <td>kokonoka</td>
+                <td>9th day of Month</td>
+                <audio id="kokonoka-audio" src="audio/month-day/kokonoka.m4a"></audio>
+              </tr>
+
+              <tr id="tooka">
+                <td>十日</td>
+                <td>とおか</td>
+                <td>tooka</td>
+                <td>10th day of Month</td>
+                <audio id="tooka-audio" src="audio/month-day/tooka.m4a"></audio>
+              </tr>
+
+              <tr id="juuichinichi">
+                <td>十一日</td>
+                <td>じゅういちにち</td>
+                <td>juuichinichi</td>
+                <td>11nd day of Month</td>
+                <audio id="juuichinichi-audio" src="audio/month-day/juuichinichi.m4a"></audio>
+              </tr>
+
+              <tr id="juuninichi">
+                <td>十二日</td>
+                <td>juuninichi</td>
+                <td>juuninichi</td>
+                <td>12th day of Month</td>
+                <audio id="juuninichi-audio" src="audio/month-day/juuninichi.m4a"></audio>
+              </tr>
+
+              <tr id="juusannichi">
+                <td>十三日</td>
+                <td>じゅうさんにち</td>
+                <td>juusannichi</td>
+                <td>13th day of Month</td>
+                <audio id="juusannichi-audio" src="audio/month-day/juusannichi.m4a"></audio>
+              </tr>
+
+              <tr id="juuyokka">
+                <td>十四日</td>
+                <td>じゅう<span class="red-text">よっか</span></td>
+                <td>juu<span class="red-text">yokka</span></td>
+                <td>14th day of Month</td>
+                <audio id="juuyokka-audio" src="audio/month-day/juuyokka.m4a"></audio>
+              </tr>
+
+              <tr id="juugonichi">
+                <td>十五日</td>
+                <td>じゅうごにち</td>
+                <td>juugonichi</td>
+                <td>15th day of Month</td>
+                <audio id="juugonichi-audio" src="audio/month-day/juugonichi.m4a"></audio>
+              </tr>
+
+              <tr id="juurokunichi">
+                <td>十六日</td>
+                <td>じゅうろくにち</td>
+                <td>juurokunichi</td>
+                <td>16th day of Month</td>
+                <audio id="juurokunichi-audio" src="audio/month-day/juurokunichi.m4a"></audio>
+              </tr>
+
+              <tr id="juushichinichi">
+                <td>十七日</td>
+                <td>じゅう<span class="red-text">しち</span>日</td>
+                <td>juu<span class="red-text">shichi</span>nichi</td>
+                <td>17th day of Month</td>
+                <audio id="juushichinichi-audio" src="audio/month-day/juushichinichi.m4a"></audio>
+              </tr>
+
+              <tr id="juuhachinichi">
+                <td>十八日</td>
+                <td>じゅうはちにち</td>
+                <td>juuhachinichi</td>
+                <td>18th day of Month</td>
+                <audio id="juuhachinichi-audio" src="audio/month-day/juuhachinichi.m4a"></audio>
+              </tr>
+
+              <tr id="juukunichi">
+                <td>十九日</td>
+                <td>じゅう<span class="red-text">く</span>にち</td>
+                <td>juu<span class="red-text">ku</span>nichi</td>
+                <td>19th day of Month</td>
+                <audio id="juukunichi-audio" src="audio/month-day/juukunichi.m4a"></audio>
+              </tr>
+
+              <tr id="hatsuka">
+                <td>二十日</td>
+                <td>はつか</td>
+                <td>hatsuka</td>
+                <td>20th day of Month</td>
+                <audio id="hatsuka-audio" src="audio/month-day/hatsuka.m4a"></audio>
+              </tr>
+
+              <tr id="sanjuunichi">
+                <td>三十日</td>
+                <td>さんじゅうにち</td>
+                <td>sanjuunichi</td>
+                <td>30th day of Month</td>
+                <audio id="sanjuunichi-audio" src="audio/month-day/sanjuunichi.m4a"></audio>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section class="day-of-a-week">
+          <h2> Days of a week</h2>
+          <div class="day-of-a-week-table">
+            <table id="day-of-a-week-table">
+              <tr>
+                <th scope="col">
+                  漢字
+                  <br>
+                  Kanji
+                </th>
+                <th scope="col">
+                  ひらがな
+                  <br>
+                  Hiragana
+                </th>
+                <th scope="col">
+                  ローマ字
+                  <br>
+                  Romaji
+                </th>
+                <th scope="col">
+                  English Meaning
+                </th>
+              </tr>
+
+              <tr id="getsuyoubi">
+                <td>月曜日</td>
+                <td>げつようび</td>
+                <td>getsuyoubi</td>
+                <td>Monday</td>
+                <audio id="getsuyoubi-audio" src="audio/week/getsuyoubi.m4a"></audio>
+              </tr>
+
+              <tr id="kayoubi">
+                <td>火曜日</td>
+                <td>かようび</td>
+                <td>kayoubi</td>
+                <td>Tuesday</td>
+                <audio id="kayoubi-audio" src="audio/week/kayoubi.m4a"></audio>
+              </tr>
+
+              <tr id="suiyoubi">
+                <td>水曜日</td>
+                <td>すいようび</td>
+                <td>suiyoubi</td>
+                <td>Wednesday</td>
+                <audio id="suiyoubi-audio" src="audio/week/suiyoubi.m4a"></audio>
+              </tr>
+
+              <tr id="mokuyoubi">
+                <td>木曜日</td>
+                <td>もくようび</td>
+                <td>mokuyoubi</td>
+                <td>Thursday</td>
+                <audio id="mokuyoubi-audio" src="audio/week/mokuyoubi.m4a"></audio>
+              </tr>
+
+              <tr id="kinyoubi">
+                <td>金曜日</td>
+                <td>きんようび</td>
+                <td>kinyoubi</td>
+                <td>Friday</td>
+                <audio id="kinyoubi-audio" src="audio/week/kinyoubi.m4a"></audio>
+              </tr>
+
+              <tr id="doyoubi">
+                <td>土曜日</td>
+                <td>どようび</td>
+                <td>doyoubi</td>
+                <td>Saturday</td>
+                <audio id="doyoubi-audio" src="audio/week/doyoubi.m4a"></audio>
+              </tr>
+
+              <tr id="michiyoubi">
+                <td>日曜日</td>
+                <td>にちようび</td>
+                <td>nichiyoubi</td>
+                <td>Sunday</td>
+                <audio id="nichiyoubi-audio" src="audio/week/nichiyoubi.m4a"></audio>
+              </tr>
+
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="index.html" class="next-previous" id="previous">&#10094;</a>
+      <a href="hiragana.html" class="next-previous" id="next">&#10095;</a>
+    </div>
+  </main>
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/nav-bar.js"></script>
+  <script src="js/basic-phrases.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+  <title>Phrase</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <meta http-equiv="content-type" charset="utf-8">
+</head>
+
+<style>
+  section {
+    margin: 20px;
+  }
+
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 70%;
+    color: black;
+    border-radius: 10px;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    padding: 7px;
+    width: 25%;
+  }
+
+  th {
+    background-color: white !important;
+  }
+
+
+  td:hover {
+    cursor: pointer;
+  }
+
+  tr:hover {
+    background-color: #efefef;
+  }
+
+  .greeting-table {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #greeting-table {
+    margin: 0 auto;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">Learn Japannese</a>
+  </header>
+
+  <div class="side-nav">
+    <a href="#" class="close-button">&times;</a>
+    <a href="alphabet.html">Alphabet</a>
+    <a href="hiragana.html">Hiragana</a>
+    <a href="katakana.html">Katakana</a>
+    <a href="vocabulary.html">Vocabulary</a>
+    <a href="phrases.html" style="font-weight:bold; font-size:20px;">Phrases</a>
+    <a href="numbers-and-time.html">Numbers and time</a>
+  </div>
+  <div class="open-button">
+    <a>&#10095;</a>
+  </div>
+
+  <main>
+    <h1 class="upper-case">Basic Phrases</h1>
+
+    <section class="vocabulary">
+      <hr>
+      <div class="introduction">
+        <p>Here are some useful basic Phrases in Japanese</p>
+        <p><em>Please click the words to check out how they are spelled</em></p>
+      </div>
+
+      <div class="greeting-table">
+        <table id="greeting-table">
+          <tr>
+            <th scope="col">
+              漢字
+              <br>
+              Kanji
+            </th>
+            <th scope="col">
+              ひらがな
+              <br>
+              Hiragana
+            </th>
+            <th scope="col">
+              ローマ字
+              <br>
+              Romaji
+            </th>
+            <th scope="col">
+              English Meaning
+            </th>
+          </tr>
+
+          <tr id="ohayou">
+            <td>おはよう</td>
+            <td>おはよう</td>
+            <td>ohayou</td>
+            <td>
+              Good morning
+              <br>
+              (Normal)
+            </td>
+            <audio id="ohayou-audio" src="audio/phrases/ohayou.m4a"></audio>
+          </tr>
+
+          <tr id="ohayougozaimasu">
+            <td>おはようございます</td>
+            <td>おはようございます</td>
+            <td>ohayougozaimasu</td>
+            <td>
+              Good morning
+              <br>
+              (Formal)
+            </td>
+            <audio id="ohayougozaimasu-audio" src="audio/phrases/ohayougozaimasu.m4a"></audio>
+
+          </tr>
+
+          <tr id="konnichiha">
+            <td>こんにちは</td>
+            <td>こんにちは</td>
+            <td>konnichiha</td>
+            <td>Hello</td>
+            <audio id="konnichiha-audio" src="audio/phrases/konnichiha.m4a"></audio>
+
+          </tr>
+
+          <tr id="konbanha">
+            <td>こんばんは</td>
+            <td>こんばんは</td>
+            <td>konbanwa</td>
+            <td>Good evening</td>
+            <audio id="konbanha-audio" src="audio/phrases/konbanha.m4a"></audio>
+
+          </tr>
+
+          <tr id="oyasuminasai">
+            <td>おやすみなさい</td>
+            <td>おやすみなさい</td>
+            <td>oyasuminasai</td>
+            <td>Good night</td>
+            <audio id="oyasuminasai-audio" src="audio/phrases/oyasuminasai.m4a"></audio>
+
+          </tr>
+
+          <tr id="arigatou">
+            <td>ありがとう</td>
+            <td>ありがとう</td>
+            <td>arigatou</td>
+            <td>Thank you
+              <br>
+              (Normal)
+            </td>
+            <audio id="arigatou-audio" src="audio/phrases/arigatou.m4a"></audio>
+
+          </tr>
+
+          <tr id="arigatougozaimasu">
+            <td>ありがとうございます</td>
+            <td>ありがとうございます</td>
+            <td>arigatougozaimasu</td>
+            <td>Thank you
+              <br>
+              (Formal)
+            </td>
+            <audio id="arigatougozaimasu-audio" src="audio/phrases/arigatougozaimasu.m4a"></audio>
+
+          </tr>
+
+          <tr id="gomennasai">
+            <td>ごめんなさい</td>
+            <td>ごめんなさい</td>
+            <td>gomennasai</td>
+            <td>Sorry
+              <br>
+              (Normal, Formal)
+            </td>
+            <audio id="gomennasai-audio" src="audio/phrases/gomennasai.m4a"></audio>
+
+          </tr>
+
+          <tr id="sumimasen">
+            <td>すみません</td>
+            <td>すみません</td>
+            <td>sumimasen</td>
+            <td>Sorry
+              <br>
+              (Normal, Formal)
+            </td>
+            <audio id="sumimasen-audio" src="audio/phrases/sumimasen.m4a"></audio>
+
+          </tr>
+
+          <tr id="hai">
+            <td>はい</td>
+            <td>はい</td>
+            <td>hai</td>
+            <td>Yes</td>
+            <audio id="hai-audio" src="audio/phrases/hai.m4a"></audio>
+
+          </tr>
+
+          <tr id="iie">
+            <td>いいえ</td>
+            <td>いいえ</td>
+            <td>iie</td>
+            <td>No</td>
+            <audio id="iie-audio" src="audio/phrases/iie.m4a"></audio>
+
+          </tr>
+
+
+        </table>
+      </div>
+    </section>
+    <div class="footer">
+      <a href="vocabulary-quiz-2.html" class="next-previous" id="previous">&#10094;</a>
+      <a href="phrases-quiz-1.html" class="next-previous" id="next">&#10095;</a>
+    </div>
+  </main>
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/nav-bar.js"></script>
+  <script src="js/basic-phrases.js"></script>
+</body>
+
+</html>
