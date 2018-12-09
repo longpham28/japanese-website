@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>Katakana quiz 2</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <meta http-equiv="content-type" charset="utf-8">
+</head>
+
+<style>
+  main {
+    margin: 0px;
+  }
+
+  section {
+    margin: 0 20px;
+  }
+
+  #katakana-quiz {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  table {
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 70%;
+  }
+
+  tr {
+    background-color: white;
+    color: black;
+  }
+
+  tr:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+  }
+
+  .deactive {
+    background-color: white !important;
+    cursor: default !important;
+  }
+
+  td {
+    border: 1px solid black;
+    height: 50px;
+  }
+
+  th {
+    background-color: white !important;
+    cursor: default !important;
+    padding: 15px;
+    font-size: 20px;
+    color: #222233;
+    padding: 30px;
+
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .next-question {
+    background-color: #D32F2F !important;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+</style>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">Learn Japannese</a>
+  </header>
+  <main>
+    <h1 class="upper-case">katakana quiz 2</h1>
+    <section class="introduction">
+      <p>In the previous lesson, we have learned about katakana. Let's check if you remembered by doing some small quizs.</p>
+    </section>
+
+    <hr>
+
+    <section id="katakana-quiz">
+      <div class="katakana-quiz">
+        <table id="quiz">
+          <tr>
+            <th class="question bold"></th>
+          </tr>
+          <tr>
+            <td class="answer" id="1st-answer"></td>
+          </tr>
+          <tr>
+            <td class="answer" id="2nd-answer"></td>
+          </tr>
+          <tr>
+            <td class="answer" id="3rd-answer"></td>
+          </tr>
+          <tr>
+            <td class="answer" id="4th-answer"></td>
+          </tr>
+          <tr>
+            <td class="judgment hide bold"></td>
+          </tr>
+          <tr class="next-question hide">
+            <td>&#8635;</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <a href="katakana.html" class="next-previous" id="previous">&#10094;</a>
+    <a href="katakana-quiz-3.html" class="next-previous" id="next">&#10095;</a>
+
+  </main>
+  <!-- jQuery library -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/nav-bar.js"></script>
+  <script src="js/katakana-quiz-2.js"></script>
+</body>
+
+</html>
