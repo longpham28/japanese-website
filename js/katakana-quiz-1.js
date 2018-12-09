@@ -59,7 +59,7 @@ $(document).ready(() => {
           $(".answer").off('click');
           $(".answer").not($(element)).html("");
           $(".judgment").css({
-            "background-color": "#222233",
+            "background-color": "#D32F2F",
             "color": "white "
           })
           $(".judgment").html("CORRECT ANSWER!");
@@ -71,7 +71,7 @@ $(document).ready(() => {
           $(element).html("");
           $(".judgment").css({
             "color": "white",
-            "background-color": "red"
+            "background-color": "#FFC107"
           });
           $(".judgment").html("WRONG ANSWER!");
           $(".judgment").show();

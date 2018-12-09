@@ -3,63 +3,65 @@
 
 <head>
     <title>Japanese Learning</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-    <meta http-equiv="content-type" charset="utf-8">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" />
+    <meta http-equiv="content-type" charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 
 <style>
     .background {
         text-align: center;
-        height: 1000px;
+        height: 100vh;
     }
 
     .background h1 {
-        font-weight: 600;
-        font-size: 50px;
-        margin-top: 0px;
-        padding-top: 80px;
+        font-weight: 200;
+        margin-top: 80px;
         margin-bottom: 80px;
         text-transform: uppercase;
     }
 
+    @media screen and (max-width: 900px) {
+        .background h1 {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        .background h1 {
+            font-size: 50px;
+        }
+    }
+
     #japan-flag {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 50%;
+        margin: 80px auto;
+        height: 40%;
     }
 
     .getstarted {
         display: block;
         position: relative;
-        top: 100px;
+        top: 35px;
         text-align: center;
     }
 
-
     .getstarted a {
         text-decoration: none;
-        color: #222233;
+        color: #ffffff;
         text-transform: uppercase;
         font-weight: 900;
         font-size: 20px;
-        border: 3px solid black;
         padding: 50px;
         border-radius: 10px;
-        background-color: white;
-    }
-
-    .getstarted a:hover {
-        background-color: #efefef;
+        background-color: #ffc107;
     }
 </style>
 
 <body>
-    <header>
-        <a href="index.html" class="logo">Learn Japannese</a>
-    </header>
+    <header><a href="index.html" class="logo">Learn Japannese</a></header>
     <main>
         <div class="background">
             <h1>Japanese Learning Website</h1>
@@ -67,7 +69,6 @@
             <div class="getstarted">
                 <a href="alphabet.html" id="getstarted">Get started</a>
             </div>
-
         </div>
     </main>
     <!-- jQuery library -->
