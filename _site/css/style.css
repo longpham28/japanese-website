@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  height: 1px;
+  background-color: #D32F2F;
+  border: 0;
+  margin: 30px auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: #222233;
+  width: 97vw;
+  line-height: 150%;
+}
+
+header {
+  background-color: #D32F2F;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  margin: 0;
+  opacity: 0.9;
+  height: 10vh;
+  left: 0px;
+  align-items: center;
+  display: flex;
+  top: 0px;
+}
+
+h1 {
+  color: #212121;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+.logo {
+  font-family: "Great Vibes", cursive;
+  color: #FFFFFF;
+  position: absolute;
+  left: 1em;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+.logo:hover {
+  font-weight: bold;
+}
+
+table {
+  background-color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.side-nav {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  background-color: #D32F2F;
+  height: 100%;
+  width: 8em;
+  opacity: 0.9;
+  display: none;
+}
+
+.open-button {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  height: 100%;
+  width: 1.5em;
+}
+
+.open-button a {
+  color: #FFC107;
+  position: relative;
+  top: 50%;
+  padding-left: 10px;
+  font-size: 20px;
+  width: 2em;
+}
+
+.open-button:hover {
+  background-color: #D32F2F;
+  color: #FFFFFF;
+}
+
+.open-button:hover a {
+  color: #FFFFFF;
+
+}
+
+.open-button.disable {
+  display: none;
+}
+
+.side-nav a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 20px 10px;
+}
+
+.side-nav .close-button {
+  margin-left: 6.5em;
+  padding: 0px 0px;
+}
+
+main.go-right {
+  margin-left: 8em;
+}
+
+main {
+  position: relative;
+  top: 100px;
+  margin-left: 2em;
+}
+
+.next-previous {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 12px 30px;
+  margin: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #FFC107;
+  color: #FFFFFF;
+}
+
+#next {
+  float: right;
+}
+
+#previous {
+  float: left;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  height: 0.5px;
+  background-color: #D32F2F;
+}
