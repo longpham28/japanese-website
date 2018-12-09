@@ -24,7 +24,7 @@ header {
   z-index: 10;
   margin: 0;
   opacity: 0.9;
-  height: 10vh;
+  height: 8vh;
   left: 0px;
   align-items: center;
   display: flex;
@@ -67,7 +67,7 @@ table {
 
 .side-nav {
   position: fixed;
-  top: 10vh;
+  top: 8vh;
   left: 0;
   background-color: #D32F2F;
   height: 100%;
@@ -78,7 +78,7 @@ table {
 
 .open-button {
   position: fixed;
-  top: 10vh;
+  top: 8vh;
   left: 0;
   height: 100%;
   width: 1.5em;
@@ -125,7 +125,7 @@ main.go-right {
 
 main {
   position: relative;
-  top: 100px;
+  top: 8vh;
   margin-left: 2em;
 }
 
