@@ -1,0 +1,691 @@
+フォルダー パスの一覧:  ボリューム RECOVERY
+ボリューム シリアル番号は 248F-9022 です
+D:.
+│  hiragana.html
+│  alphabet.html
+│  hiragana-quiz-1.html
+│  index.html
+│  vocabulary.html
+│  hiragana-quiz-2.html
+│  hiragana-quiz-3.html
+│  debug.js
+│  katakana.html
+│  hiragana-quiz-4.html
+│  debug.html
+│  katakana-quiz-1.html
+│  katakana-quiz-2.html
+│  katakana-quiz-3.html
+│  numbers-and-time.html
+│  practice.html
+│  phrases.html
+│  katakana-quiz-4.html
+│  vocabulary-quiz-1.html
+│  list.txt
+│  katakana.1.html
+│  
+├─.vscode
+│      settings.json
+│      launch.json
+│      
+├─audio
+│  ├─letters
+│  │      a.m4a
+│  │      ba.m4a
+│  │      be.m4a
+│  │      bi.m4a
+│  │      bo.m4a
+│  │      bu.m4a
+│  │      bya.m4a
+│  │      byo.m4a
+│  │      byu.m4a
+│  │      cha.m4a
+│  │      chi.m4a
+│  │      cho.m4a
+│  │      chu.m4a
+│  │      da.m4a
+│  │      de.m4a
+│  │      di.m4a
+│  │      do.m4a
+│  │      du.m4a
+│  │      e.m4a
+│  │      fu.m4a
+│  │      ga.m4a
+│  │      ge.m4a
+│  │      gi.m4a
+│  │      go.m4a
+│  │      gu.m4a
+│  │      gya.m4a
+│  │      gyo.m4a
+│  │      gyu.m4a
+│  │      ha.m4a
+│  │      he.m4a
+│  │      hi.m4a
+│  │      ho.m4a
+│  │      hya.m4a
+│  │      hyo.m4a
+│  │      hyu.m4a
+│  │      i.m4a
+│  │      ja.m4a
+│  │      ji.m4a
+│  │      jo.m4a
+│  │      ju.m4a
+│  │      ka.m4a
+│  │      ke.m4a
+│  │      ki.m4a
+│  │      ko.m4a
+│  │      ku.m4a
+│  │      kya.m4a
+│  │      kyo.m4a
+│  │      kyu.m4a
+│  │      ma.m4a
+│  │      me.m4a
+│  │      mi.m4a
+│  │      mo.m4a
+│  │      mu.m4a
+│  │      mya.m4a
+│  │      myo.m4a
+│  │      myu.m4a
+│  │      n.m4a
+│  │      na.m4a
+│  │      ne.m4a
+│  │      ni.m4a
+│  │      no.m4a
+│  │      nu.m4a
+│  │      nya.m4a
+│  │      nyo.m4a
+│  │      nyu.m4a
+│  │      o.m4a
+│  │      pa.m4a
+│  │      pe.m4a
+│  │      pi.m4a
+│  │      po.m4a
+│  │      pu.m4a
+│  │      pya.m4a
+│  │      pyo.m4a
+│  │      pyu.m4a
+│  │      ra.m4a
+│  │      re.m4a
+│  │      ri.m4a
+│  │      ro.m4a
+│  │      ru.m4a
+│  │      rya.m4a
+│  │      ryo.m4a
+│  │      ryu.m4a
+│  │      sa.m4a
+│  │      se.m4a
+│  │      sha.m4a
+│  │      shi.m4a
+│  │      sho.m4a
+│  │      shu.m4a
+│  │      so.m4a
+│  │      su.m4a
+│  │      ta.m4a
+│  │      te.m4a
+│  │      to.m4a
+│  │      tsu.m4a
+│  │      u.m4a
+│  │      wa.m4a
+│  │      wo.m4a
+│  │      ya.m4a
+│  │      yo.m4a
+│  │      yu.m4a
+│  │      za.m4a
+│  │      ze.m4a
+│  │      zo.m4a
+│  │      zu.m4a
+│  │      
+│  ├─letters_
+│  │      a.mp3
+│  │      chi.mp3
+│  │      e.mp3
+│  │      fu.mp3
+│  │      ha.mp3
+│  │      he.mp3
+│  │      hi.mp3
+│  │      ho.mp3
+│  │      i.mp3
+│  │      ka.mp3
+│  │      ke.mp3
+│  │      ki.mp3
+│  │      ko.mp3
+│  │      ku.mp3
+│  │      ma.mp3
+│  │      me.mp3
+│  │      mi.mp3
+│  │      mo.mp3
+│  │      mu.mp3
+│  │      n.mp3
+│  │      na.mp3
+│  │      ne.mp3
+│  │      ni.mp3
+│  │      no.mp3
+│  │      nu.mp3
+│  │      o.mp3
+│  │      ra.mp3
+│  │      re.mp3
+│  │      ri.mp3
+│  │      ro.mp3
+│  │      ru.mp3
+│  │      sa.mp3
+│  │      se.mp3
+│  │      shi.mp3
+│  │      so.mp3
+│  │      su.mp3
+│  │      ta.mp3
+│  │      te.mp3
+│  │      to.mp3
+│  │      tsu.mp3
+│  │      u.mp3
+│  │      wa.mp3
+│  │      wo.mp3
+│  │      ya.mp3
+│  │      yo.mp3
+│  │      yu.mp3
+│  │      
+│  ├─phrases
+│  │      arigatou.m4a
+│  │      arigatougozaimasu.m4a
+│  │      gomennasai.m4a
+│  │      hai.m4a
+│  │      iie.m4a
+│  │      konbanha.m4a
+│  │      konnichiha.m4a
+│  │      ohayou.m4a
+│  │      ohayougozaimasu.m4a
+│  │      oyasuminasai.m4a
+│  │      sumimasen.m4a
+│  │      
+│  └─vocabulary
+│          anata.m4a
+│          ano.m4a
+│          are.m4a
+│          asoko.m4a
+│          boku.m4a
+│          kanojo.m4a
+│          kare.m4a
+│          koko.m4a
+│          kono.m4a
+│          kore.m4a
+│          soko.m4a
+│          sono.m4a
+│          sore.m4a
+│          watashi.m4a
+│          
+├─css
+│      style.css
+│      
+├─image
+│  │  Mount-Fuji.jpg
+│  │  link1.txt
+│  │  linkkata.txt
+│  │  america-flag-1.png
+│  │  america-flag-2.png
+│  │  america-flag.png
+│  │  ichigo.png
+│  │  japan-1.png
+│  │  japan-2.png
+│  │  japan-flag-1080.jpg
+│  │  japan-flag-640.jpg
+│  │  japan-flag.png
+│  │  japan.png
+│  │  pen-1.png
+│  │  pen.jpg
+│  │  名称未設定 1.psd
+│  │  
+│  └─letters
+│      ├─Hiragana
+│      │      a.gif
+│      │      chi.gif
+│      │      e.gif
+│      │      fu.gif
+│      │      ha.gif
+│      │      he.gif
+│      │      hi.gif
+│      │      ho.gif
+│      │      i.gif
+│      │      ka.gif
+│      │      ke.gif
+│      │      ki.gif
+│      │      ko.gif
+│      │      ku.gif
+│      │      ma.gif
+│      │      me.gif
+│      │      mi.gif
+│      │      mo.gif
+│      │      mu.gif
+│      │      n.gif
+│      │      na.gif
+│      │      ne.gif
+│      │      ni.gif
+│      │      no.gif
+│      │      nu.gif
+│      │      o.gif
+│      │      ra.gif
+│      │      re.gif
+│      │      ri.gif
+│      │      ro.gif
+│      │      ru.gif
+│      │      sa.gif
+│      │      se.gif
+│      │      shi.gif
+│      │      so.gif
+│      │      su.gif
+│      │      ta.gif
+│      │      te.gif
+│      │      to.gif
+│      │      tsu.gif
+│      │      u.gif
+│      │      wa.gif
+│      │      wo.gif
+│      │      ya.gif
+│      │      yo.gif
+│      │      yu.gif
+│      │      
+│      └─Katakana
+│              a.gif
+│              chi.gif
+│              e.gif
+│              fu.gif
+│              ha.gif
+│              he.gif
+│              hi.gif
+│              ho.gif
+│              i.gif
+│              ka.gif
+│              ke.gif
+│              ki.gif
+│              ko.gif
+│              ku.gif
+│              ma.gif
+│              me.gif
+│              mi.gif
+│              mo.gif
+│              mu.gif
+│              n.gif
+│              na.gif
+│              ne.gif
+│              ni.gif
+│              no.gif
+│              nu.gif
+│              o.gif
+│              ra.gif
+│              re.gif
+│              ri.gif
+│              ro.gif
+│              ru.gif
+│              sa.gif
+│              se.gif
+│              shi.gif
+│              so.gif
+│              su.gif
+│              ta.gif
+│              te.gif
+│              to.gif
+│              tsu.gif
+│              u.gif
+│              wa.gif
+│              wo.gif
+│              ya.gif
+│              yo.gif
+│              yu.gif
+│              
+├─js
+│      basic-phrases.js
+│      bootstrap.min.js
+│      katakana-quiz-4.js
+│      hiragana-quiz-1.js
+│      hiragana-quiz-2.js
+│      hiragana-quiz-3.js
+│      hiragana-quiz-4.js
+│      jquery.min.js
+│      katakana-quiz-1.js
+│      katakana-quiz-2.js
+│      katakana-quiz-3.js
+│      hiragana-katakana.js
+│      nav-bar.js
+│      side-nav.js
+│      vocabulary-quiz-1.js
+│      question.js
+│      
+└─_site
+    │  alphabet.html
+    │  debug.html
+    │  debug.js
+    │  hiragana-quiz-1.html
+    │  hiragana-quiz-2.html
+    │  hiragana-quiz-3.html
+    │  hiragana-quiz-4.html
+    │  hiragana.html
+    │  index.html
+    │  katakana-quiz-1.html
+    │  katakana-quiz-2.html
+    │  katakana-quiz-3.html
+    │  katakana-quiz-4.html
+    │  katakana.1.html
+    │  katakana.html
+    │  numbers-and-time.html
+    │  phrases.html
+    │  vocabulary-quiz-1.html
+    │  vocabulary.html
+    │  
+    ├─audio
+    │  ├─letters
+    │  │      a.m4a
+    │  │      ba.m4a
+    │  │      be.m4a
+    │  │      bi.m4a
+    │  │      bo.m4a
+    │  │      bu.m4a
+    │  │      bya.m4a
+    │  │      byo.m4a
+    │  │      byu.m4a
+    │  │      cha.m4a
+    │  │      chi.m4a
+    │  │      cho.m4a
+    │  │      chu.m4a
+    │  │      da.m4a
+    │  │      de.m4a
+    │  │      di.m4a
+    │  │      do.m4a
+    │  │      du.m4a
+    │  │      e.m4a
+    │  │      fu.m4a
+    │  │      ga.m4a
+    │  │      ge.m4a
+    │  │      gi.m4a
+    │  │      go.m4a
+    │  │      gu.m4a
+    │  │      gya.m4a
+    │  │      gyo.m4a
+    │  │      gyu.m4a
+    │  │      ha.m4a
+    │  │      he.m4a
+    │  │      hi.m4a
+    │  │      ho.m4a
+    │  │      hya.m4a
+    │  │      hyo.m4a
+    │  │      hyu.m4a
+    │  │      i.m4a
+    │  │      ja.m4a
+    │  │      ji.m4a
+    │  │      jo.m4a
+    │  │      ju.m4a
+    │  │      ka.m4a
+    │  │      ke.m4a
+    │  │      ki.m4a
+    │  │      ko.m4a
+    │  │      ku.m4a
+    │  │      kya.m4a
+    │  │      kyo.m4a
+    │  │      kyu.m4a
+    │  │      ma.m4a
+    │  │      me.m4a
+    │  │      mi.m4a
+    │  │      mo.m4a
+    │  │      mu.m4a
+    │  │      mya.m4a
+    │  │      myo.m4a
+    │  │      myu.m4a
+    │  │      n.m4a
+    │  │      na.m4a
+    │  │      ne.m4a
+    │  │      ni.m4a
+    │  │      no.m4a
+    │  │      nu.m4a
+    │  │      nya.m4a
+    │  │      nyo.m4a
+    │  │      nyu.m4a
+    │  │      o.m4a
+    │  │      pa.m4a
+    │  │      pe.m4a
+    │  │      pi.m4a
+    │  │      po.m4a
+    │  │      pu.m4a
+    │  │      pya.m4a
+    │  │      pyo.m4a
+    │  │      pyu.m4a
+    │  │      ra.m4a
+    │  │      re.m4a
+    │  │      ri.m4a
+    │  │      ro.m4a
+    │  │      ru.m4a
+    │  │      rya.m4a
+    │  │      ryo.m4a
+    │  │      ryu.m4a
+    │  │      sa.m4a
+    │  │      se.m4a
+    │  │      sha.m4a
+    │  │      shi.m4a
+    │  │      sho.m4a
+    │  │      shu.m4a
+    │  │      so.m4a
+    │  │      su.m4a
+    │  │      ta.m4a
+    │  │      te.m4a
+    │  │      to.m4a
+    │  │      tsu.m4a
+    │  │      u.m4a
+    │  │      wa.m4a
+    │  │      wo.m4a
+    │  │      ya.m4a
+    │  │      yo.m4a
+    │  │      yu.m4a
+    │  │      za.m4a
+    │  │      ze.m4a
+    │  │      zo.m4a
+    │  │      zu.m4a
+    │  │      
+    │  ├─letters_
+    │  │      a.mp3
+    │  │      chi.mp3
+    │  │      e.mp3
+    │  │      fu.mp3
+    │  │      ha.mp3
+    │  │      he.mp3
+    │  │      hi.mp3
+    │  │      ho.mp3
+    │  │      i.mp3
+    │  │      ka.mp3
+    │  │      ke.mp3
+    │  │      ki.mp3
+    │  │      ko.mp3
+    │  │      ku.mp3
+    │  │      ma.mp3
+    │  │      me.mp3
+    │  │      mi.mp3
+    │  │      mo.mp3
+    │  │      mu.mp3
+    │  │      n.mp3
+    │  │      na.mp3
+    │  │      ne.mp3
+    │  │      ni.mp3
+    │  │      no.mp3
+    │  │      nu.mp3
+    │  │      o.mp3
+    │  │      ra.mp3
+    │  │      re.mp3
+    │  │      ri.mp3
+    │  │      ro.mp3
+    │  │      ru.mp3
+    │  │      sa.mp3
+    │  │      se.mp3
+    │  │      shi.mp3
+    │  │      so.mp3
+    │  │      su.mp3
+    │  │      ta.mp3
+    │  │      te.mp3
+    │  │      to.mp3
+    │  │      tsu.mp3
+    │  │      u.mp3
+    │  │      wa.mp3
+    │  │      wo.mp3
+    │  │      ya.mp3
+    │  │      yo.mp3
+    │  │      yu.mp3
+    │  │      
+    │  ├─phrases
+    │  │      arigatou.m4a
+    │  │      arigatougozaimasu.m4a
+    │  │      gomennasai.m4a
+    │  │      hai.m4a
+    │  │      iie.m4a
+    │  │      konbanha.m4a
+    │  │      konnichiha.m4a
+    │  │      ohayou.m4a
+    │  │      ohayougozaimasu.m4a
+    │  │      oyasuminasai.m4a
+    │  │      sumimasen.m4a
+    │  │      
+    │  └─vocabulary
+    │          anata.m4a
+    │          ano.m4a
+    │          are.m4a
+    │          asoko.m4a
+    │          boku.m4a
+    │          kanojo.m4a
+    │          kare.m4a
+    │          koko.m4a
+    │          kono.m4a
+    │          kore.m4a
+    │          soko.m4a
+    │          sono.m4a
+    │          sore.m4a
+    │          watashi.m4a
+    │          
+    ├─css
+    │      style.css
+    │      
+    ├─image
+    │  │  Mount-Fuji.jpg
+    │  │  america-flag-1.png
+    │  │  america-flag-2.png
+    │  │  america-flag.png
+    │  │  ichigo.png
+    │  │  japan-1.png
+    │  │  japan-2.png
+    │  │  japan-flag-1080.jpg
+    │  │  japan-flag-640.jpg
+    │  │  japan-flag.png
+    │  │  japan.png
+    │  │  link1.txt
+    │  │  linkkata.txt
+    │  │  pen-1.png
+    │  │  pen.jpg
+    │  │  名称未設定 1.psd
+    │  │  
+    │  └─letters
+    │      ├─Hiragana
+    │      │      a.gif
+    │      │      chi.gif
+    │      │      e.gif
+    │      │      fu.gif
+    │      │      ha.gif
+    │      │      he.gif
+    │      │      hi.gif
+    │      │      ho.gif
+    │      │      i.gif
+    │      │      ka.gif
+    │      │      ke.gif
+    │      │      ki.gif
+    │      │      ko.gif
+    │      │      ku.gif
+    │      │      ma.gif
+    │      │      me.gif
+    │      │      mi.gif
+    │      │      mo.gif
+    │      │      mu.gif
+    │      │      n.gif
+    │      │      na.gif
+    │      │      ne.gif
+    │      │      ni.gif
+    │      │      no.gif
+    │      │      nu.gif
+    │      │      o.gif
+    │      │      ra.gif
+    │      │      re.gif
+    │      │      ri.gif
+    │      │      ro.gif
+    │      │      ru.gif
+    │      │      sa.gif
+    │      │      se.gif
+    │      │      shi.gif
+    │      │      so.gif
+    │      │      su.gif
+    │      │      ta.gif
+    │      │      te.gif
+    │      │      to.gif
+    │      │      tsu.gif
+    │      │      u.gif
+    │      │      wa.gif
+    │      │      wo.gif
+    │      │      ya.gif
+    │      │      yo.gif
+    │      │      yu.gif
+    │      │      
+    │      └─Katakana
+    │              a.gif
+    │              chi.gif
+    │              e.gif
+    │              fu.gif
+    │              ha.gif
+    │              he.gif
+    │              hi.gif
+    │              ho.gif
+    │              i.gif
+    │              ka.gif
+    │              ke.gif
+    │              ki.gif
+    │              ko.gif
+    │              ku.gif
+    │              ma.gif
+    │              me.gif
+    │              mi.gif
+    │              mo.gif
+    │              mu.gif
+    │              n.gif
+    │              na.gif
+    │              ne.gif
+    │              ni.gif
+    │              no.gif
+    │              nu.gif
+    │              o.gif
+    │              ra.gif
+    │              re.gif
+    │              ri.gif
+    │              ro.gif
+    │              ru.gif
+    │              sa.gif
+    │              se.gif
+    │              shi.gif
+    │              so.gif
+    │              su.gif
+    │              ta.gif
+    │              te.gif
+    │              to.gif
+    │              tsu.gif
+    │              u.gif
+    │              wa.gif
+    │              wo.gif
+    │              ya.gif
+    │              yo.gif
+    │              yu.gif
+    │              
+    └─js
+            basic-phrases.js
+            bootstrap.min.js
+            hiragana-katakana.js
+            hiragana-quiz-1.js
+            hiragana-quiz-2.js
+            hiragana-quiz-3.js
+            hiragana-quiz-4.js
+            jquery.min.js
+            katakana-quiz-1.js
+            katakana-quiz-2.js
+            katakana-quiz-3.js
+            katakana-quiz-4.js
+            nav-bar.js
+            react-dom.js
+            react.js
+            side-nav.js
+            vocabulary-quiz-1.js
+            
