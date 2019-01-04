@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Question</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" />
+  <link href="https://unpkg.com/ionicons@4.4.8/dist/css/ionicons.min.css" rel="stylesheet" />
+
+</head>
+<style>
+  .container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .row {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .col {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #D32F2F;
+    border: 1px solid #FFEB3B;
+    height: 90%;
+    flex-basis: 30%;
+    text-decoration: none;
+  }
+
+  .ion-md-bulb {
+    border: none;
+    font-size: 3em;
+    pointer-events: none;
+
+  }
+
+  .col:hover {
+    cursor: pointer;
+  }
+
+  .deactive {
+    opacity: 0.5;
+  }
+
+  .active {
+    font-weight: 600;
+    border: 3px solid #FFEB3B;
+    border-radius: 10px;
+    background: #FFEB3B;
+  }
+</style>
+
+<body>
+  <header><a href="index.html" class="logo">Learn Japannese</a></header>
+  <main>
+    <h1 class="uppercase">Questions List</h1>
+    <div class="container">
+      <div class="row">
+        <a class="col" href="alphabet.html">Alphabet</a>
+        <a class="col" href="hiragana-quiz-1.html">Hiragana</a>
+        <a class="col" href="katakana-quiz-1.html">Katakana</a>
+      </div>
+      <div class="row">
+        <a class="col" href="vocabulary-quiz-1.html">Vocabulary</a>
+        <i class="icon ion-md-bulb col"></i>
+        <a class="col" href="phrase-quiz-1.html">Phrases</a>
+      </div>
+      <div class="row">
+        <a class="col" href="number-and-time-quiz-1.html">Numbers and time</a>
+        <a class="col" href="verb-quiz-1.html">Verb</a>
+        <a class="col" href="insi-trans-verb-quiz-1.html">Insitive verb and Transitive verb</a>
+      </div>
+    </div>
+  </main>
+  <script src="js/question.js"></script>
+</body>
+
+</html>
